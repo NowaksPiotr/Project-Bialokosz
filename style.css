@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+.nav{
+    margin: 2em 0 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__menu-left, .nav__menu-right{
+    list-style-type: none;
+}
+
+.nav__menu-links{
+    display: inline-block;
+}
+img{
+    position: absolute;
+    top: -1em;
+    left: 50%;
+    transform: translate(-50%);
+}
