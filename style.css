@@ -69,22 +69,39 @@ body{
     }
 
     .nav{
-        margin: 2em 0 0 0;
+        position: absolute;
+        margin: 2.5em 0 0 0;
         display: flex;
-        justify-content: space-around;
-        /* display: none; */
+        flex-direction: column;
+        background-color: gray; /*** Default color will be diffrent ***/
+        width: 50vw;
+        transition-duration: .8s;
+        left: -100vw;
+        z-index: 1;
+    }
+    .nav--active{
+        transition-duration: .8s;
+        left: 0;
     }
     
     .nav__menu-left, .nav__menu-right{
+        margin: 0;
         list-style-type: none;
+        display: block;
     }
     
     .nav__menu-links{
-        display: inline-block;
+        display: block;
+        margin-bottom: .5em;
+        text-decoration: none;
+        color: rgb(0,0,0);
     }
     .logo__bialokosz{
         display: none;
-        width: 40%;
+    }
+    .logo__bialokosz__mobile{
+        display: block;
+        width: 30%;
         position: absolute;
         top: .2em;
         left: 50%;
