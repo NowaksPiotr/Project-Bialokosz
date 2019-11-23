@@ -1,0 +1,110 @@
+/********** MEDIA QUERIES FOR DEVICE MIN-WIDTH: 480px ****************/
+body{
+    margin: 0;
+}
+.logo__bialokosz{
+    width: 20%;
+    position: absolute;
+    top: -1em;
+    left: 50%;
+    transform: translate(-50%);
+}
+.logo__bialokosz__mobile{
+    display: none;
+}
+@media(max-width: 480px){
+    .logo__bialokosz__mobile{
+        width: 40%;
+        position: absolute;
+        top: .2em;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    /******* HAMBURGER MENU *******/
+
+    .hamburger{
+        width: 20px;
+        height: 30px;
+        top: 10px;
+        left: 10px;
+        position: absolute;
+        transition-duration: .5s;
+    }
+    .hamburger__bar{
+        position: absolute;
+        top: 9px;
+        height: 3px;
+        width: 20px;
+        background-color: black;
+        content: '';
+        transition-duration: .5s;
+    }
+    .hamburger__bar::before{
+        position: absolute;
+        top: -6px;
+        height: 3px;
+        width: 20px;
+        background-color: black;
+        content: '';
+        transition-duration: .5s;
+    }
+    .hamburger__bar::after{
+        position: absolute;
+        top: 6px;
+        height: 3px;
+        width: 20px;
+        background-color: black;
+        content: '';
+        transition-duration: .5s;
+    }
+    .hamburger__bar--active{
+        transition-duration: .5s;
+        background-color: transparent;
+    }
+    .hamburger__bar--active::before{
+        transform: rotateZ(45deg) scaleX(1.25) translate(3px, 4px);
+    }
+    .hamburger__bar--active::after{
+        transform: rotateZ(-45deg) scaleX(1.25) translate(3px, -5px);
+    }
+
+    .nav{
+        position: absolute;
+        margin: 2.5em 0 0 0;
+        display: flex;
+        flex-direction: column;
+        background-color: gray; /*** Default color will be diffrent ***/
+        width: 50vw;
+        transition-duration: .8s;
+        left: -100vw;
+        z-index: 1;
+    }
+    .nav--active{
+        transition-duration: .8s;
+        left: 0;
+    }
+    
+    .nav__menu-left, .nav__menu-right{
+        margin: 0;
+        list-style-type: none;
+        display: block;
+    }
+    
+    .nav__menu-links{
+        display: block;
+        margin-bottom: .5em;
+        text-decoration: none;
+        color: rgb(0,0,0);
+    }
+    .logo__bialokosz{
+        display: none;
+    }
+    .logo__bialokosz__mobile{
+        display: block;
+        width: 30%;
+        position: absolute;
+        top: .2em;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
