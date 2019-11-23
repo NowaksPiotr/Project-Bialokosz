@@ -1,35 +1,44 @@
+/********** MEDIA QUERIES FOR DEVICE MIN-WIDTH: 480px ****************/
 body{
     margin: 0;
 }
-.nav{
-    margin: 2em 0 0 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-.nav__menu-left, .nav__menu-right{
-    list-style-type: none;
-}
-
-.nav__menu-links{
-    display: inline-block;
-}
-img{
+.logo__bialokosz{
+    width: 20%;
     position: absolute;
     top: -1em;
     left: 50%;
     transform: translate(-50%);
 }
-
-/********** MEDIA QUERIES FOR DEVICE MIN-WIDTH: 480px ****************/
-
-@media(min-width: 480px){
-    body{
-        color: red;
-    }
+.logo__bialokosz__mobile{
+    display: none;
 }
-@media(min-width: 720px){
-    body{
-        color: green;
+@media(max-width: 480px){
+    .logo__bialokosz__mobile{
+        width: 40%;
+        position: absolute;
+        top: .2em;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .nav{
+        margin: 2em 0 0 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .nav__menu-left, .nav__menu-right{
+        list-style-type: none;
+    }
+    
+    .nav__menu-links{
+        display: inline-block;
+    }
+    .logo__bialokosz{
+        display: none;
+        width: 40%;
+        position: absolute;
+        top: .2em;
+        left: 50%;
+        transform: translate(-50%);
     }
 }
