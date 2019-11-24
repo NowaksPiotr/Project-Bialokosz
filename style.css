@@ -63,7 +63,7 @@ body{
 
     .nav{
         position: absolute;
-        margin: 2.5em 0 0 0;
+        margin: 3.8em 0 0 0;
         display: flex;
         flex-direction: column;
         background-color: gray; /*** Default color will be diffrent ***/
@@ -104,5 +104,31 @@ body{
     }
     /***********************      LOGO      ***********************/
     /********************** CONTACT SECTION  **********************/
-    
+    .invitation{
+        position: relative;
+        top: 4em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact{
+        position: relative;
+        top: 3.5em;
+    }
+    .contact__details-party{
+        display: flex;
+        justify-content: space-around;
+    }
+    .contact__details-party-header,
+    .contact__details-booking-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact__details-booking-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
