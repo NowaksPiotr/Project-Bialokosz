@@ -1,6 +1,7 @@
 body{
     margin: 0;
-    color: rgb(119, 117, 114);
+    color: rgb(80, 80, 80);
+    background-color: rgb(248, 242, 242);
 }
 .logo__bialokosz{
     width: 40%;
@@ -17,7 +18,10 @@ body{
     color: inherit;
     cursor: pointer;
 }
-/********** MEDIA QUERIES FOR DEVICE MIN-WIDTH: 480px ****************/
+.icons__credit{
+    display: none;
+}
+/********** MEDIA QUERIES FOR DEVICE MAX-WIDTH: 480px ****************/
 @media(max-width: 480px){
     /*********************** HAMBURGER MENU ***********************/
     .link{
@@ -28,9 +32,10 @@ body{
         width: 20px;
         height: 30px;
         top: 10px;
-        left: 10px;
+        right: 10px;
         position: absolute;
         transition-duration: .5s;
+        z-index: 3;
     }
     .hamburger__bar{
         position: absolute;
@@ -72,18 +77,20 @@ body{
 
     .nav{
         position: absolute;
-        margin: 3.8em 0 0 0;
+        margin: 0;
+        top: 0;
         display: flex;
         flex-direction: column;
         background-color: lightgray; /*** Default color will be diffrent ***/
-        width: 50vw;
+        width: 75vw;
+        height: 100%;
         transition-duration: .8s;
-        left: -100vw;
+        right: -100vw;
         z-index: 1;
     }
     .nav--active{
         transition-duration: .8s;
-        left: 0;
+        right: 0;
     }
     
     .nav__menu-left, .nav__menu-right{
@@ -104,7 +111,7 @@ body{
     }
     .logo__bialokosz__mobile{
         display: block;
-        width: 40%;
+        width: 45%;
         position: absolute;
         top: .2em;
         left: 50%;
@@ -157,6 +164,19 @@ body{
         position: relative;
         height: 15em;
         width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .contact__details-social-media,
+    .social__media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contact__details-social-media-icon{
+        height: 30%;
+        width: 30%;
         margin: 0;
         padding: 0;
     }
