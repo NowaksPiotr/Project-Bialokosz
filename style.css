@@ -84,7 +84,7 @@ body{
         top: 0;
         display: flex;
         flex-direction: column;
-        background-color: lightgray; /*** Default color will be diffrent ***/
+        background-color: rgb(235, 235, 235); /*** Default color will be diffrent ***/
         width: 75vw;
         height: 100%;
         transition-duration: .8s;
@@ -95,13 +95,13 @@ body{
         transition-duration: .8s;
         left: 0;
     }
-    .mobile__hamburger-logo-container{
+    .nav__menu-hamburger-logo-container{
         margin: 2em 0 0 0;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .mobile__hamburger-logo{
+    .nav__menu-hamburger-logo{
         position: relative;
         display: block;
         width: 50%;
