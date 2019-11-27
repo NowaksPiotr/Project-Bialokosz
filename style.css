@@ -153,7 +153,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0;
+        margin: 2em 0 0 0 ;
     }
     .contact__details-booking-text,
     .contact__details-address-text{
@@ -183,7 +183,7 @@ body{
     .contact__details-social-media,
     .social__media{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         text-align: center;
     }
@@ -192,5 +192,21 @@ body{
         width: 20%;
         margin: 0;
         padding: 0;
+    }
+    .footer{
+        width: 100vw;
+        position: absolute;
+        top: 65em;
+        margin:0;
+        font-size: .8em;
+        height: 2em;
+    }
+    .footer__wrapper{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer__text{
+        font-size: .9em;
     }
 }
