@@ -84,7 +84,7 @@ body{
         top: 0;
         display: flex;
         flex-direction: column;
-        background-color: rgb(235, 235, 235); /*** Default color will be diffrent ***/
+        background-color: lightgray; /*** Default color will be diffrent ***/
         width: 75vw;
         height: 100%;
         transition-duration: .8s;
@@ -95,16 +95,18 @@ body{
         transition-duration: .8s;
         left: 0;
     }
-    .nav__menu-hamburger-logo-container{
+    .mobile__hamburger-logo-container{
         margin: 2em 0 0 0;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .nav__menu-hamburger-logo{
+    .mobile__hamburger-logo{
         position: relative;
         display: block;
         width: 50%;
+        
     }
     .nav__menu-left, .nav__menu-right{
         margin: 0;
@@ -153,7 +155,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 2em 0 0 0 ;
+        margin: 0;
     }
     .contact__details-booking-text,
     .contact__details-address-text{
@@ -183,7 +185,7 @@ body{
     .contact__details-social-media,
     .social__media{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         text-align: center;
     }
@@ -192,21 +194,5 @@ body{
         width: 20%;
         margin: 0;
         padding: 0;
-    }
-    .footer{
-        width: 100vw;
-        position: absolute;
-        top: 65em;
-        margin:0;
-        font-size: .8em;
-        height: 2em;
-    }
-    .footer__wrapper{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-    .footer__text{
-        font-size: .9em;
     }
 }
