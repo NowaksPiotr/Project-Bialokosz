@@ -195,4 +195,20 @@ body{
         margin: 0;
         padding: 0;
     }
+    .footer{
+        width: 100vw;
+        position: absolute;
+        top: 65em;
+        margin:0;
+        font-size: .8em;
+        height: 2em;
+    }
+    .footer__wrapper{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer__text{
+        font-size: .9em;
+    }
 }
