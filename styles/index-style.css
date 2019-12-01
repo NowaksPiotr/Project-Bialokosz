@@ -1,5 +1,5 @@
 @media (max-width: 480px){
-    /********************  INDEX.HTML GALLERY *********************/
+    /********************  WELCOME PHOTO *********************/
     .welcome {
         position: relative;
         top: 5em;
@@ -18,5 +18,32 @@
         height: 100%;
         width: 100%;
     }
-    /********************  INDEX.HTML GALLERY *********************/
+    /******************** WELCOME PHOTO *********************/
+    /*******************  SCROLL BUTTON *********************/
+    .scroll__button-wrapper{
+        height: 4em;
+        width: 4em;
+        position: absolute;
+        left: 50%;
+        bottom: 3em;
+        transform: translate(-2em);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .scroll__button{
+        height: 3em;
+        width: 3em;
+        border-top: none;
+        border-left: none;
+        border-bottom: 4px solid white;
+        border-right: 4px solid white;
+        transform: rotate(45deg);
+        animation: scrollAnimation 2500ms ease infinite;
+        opacity: 0;
+    }
+    @keyframes scrollAnimation{
+        0%{ opacity: 0; transform: translateY(-6em) rotate(45deg); }
+        100%{ opacity: 1; transform: translateY(0em) rotate(45deg); }
+    }
 }
