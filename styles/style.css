@@ -1,37 +1,44 @@
-body{
+body {
     margin: 0;
     color: rgb(80, 80, 80);
     background-color: rgb(248, 242, 242);
 }
-.logo__bialokosz{
+
+.logo__bialokosz {
     width: 40%;
     position: absolute;
     top: -1em;
     left: 50%;
     transform: translate(-50%);
 }
-.logo__bialokosz__mobile{
+
+.logo__bialokosz__mobile {
     display: none;
 }
-.link{
+
+.link {
     text-decoration: underline;
     color: inherit;
     cursor: pointer;
 }
-.icons__credit{
+
+.icons__credit {
     display: none;
 }
-.mobile__hamburger-logo{
+
+.mobile__hamburger-logo {
     display: none;
 }
+
 /********** MEDIA QUERIES FOR DEVICE MAX-WIDTH: 480px ****************/
-@media(max-width: 480px){
+
+@media(max-width: 480px) {
     /*********************** HAMBURGER MENU ***********************/
-    .link{
+    .link {
         text-decoration: underline;
         color: rgb(119, 117, 114);
     }
-    .hamburger{
+    .hamburger {
         width: 20px;
         height: 30px;
         top: 10px;
@@ -40,7 +47,7 @@ body{
         transition-duration: .5s;
         z-index: 3;
     }
-    .hamburger__bar{
+    .hamburger__bar {
         position: absolute;
         top: 9px;
         height: 3px;
@@ -49,7 +56,7 @@ body{
         content: '';
         transition-duration: .5s;
     }
-    .hamburger__bar::before{
+    .hamburger__bar::before {
         position: absolute;
         top: -6px;
         height: 3px;
@@ -58,7 +65,7 @@ body{
         content: '';
         transition-duration: .5s;
     }
-    .hamburger__bar::after{
+    .hamburger__bar::after {
         position: absolute;
         top: 6px;
         height: 3px;
@@ -67,67 +74,65 @@ body{
         content: '';
         transition-duration: .5s;
     }
-    .hamburger__bar--active{
+    .hamburger__bar--active {
         transition-duration: .5s;
         background-color: transparent;
     }
-    .hamburger__bar--active::before{
+    .hamburger__bar--active::before {
         transform: rotateZ(45deg) scaleX(1.25) translate(3px, 4px);
     }
-    .hamburger__bar--active::after{
+    .hamburger__bar--active::after {
         transform: rotateZ(-45deg) scaleX(1.25) translate(3px, -5px);
     }
-
-    .nav{
+    .nav {
         position: fixed;
         margin: 0;
         top: 0;
         display: flex;
         flex-direction: column;
-        background-color: lightgray; /*** Default color will be diffrent ***/
+        background-color: lightgray;
+        /*** Default color will be diffrent ***/
         width: 75vw;
         height: 100%;
         transition-duration: .8s;
         left: -100vw;
         z-index: 1;
     }
-    .nav--active{
+    .nav--active {
         transition-duration: .8s;
         left: 0;
     }
-    .mobile__hamburger-logo-container{
+    .mobile__hamburger-logo-container {
         margin: 2em 0 0 0;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .mobile__hamburger-logo{
+    .mobile__hamburger-logo {
         position: relative;
         display: block;
         width: 50%;
-        
     }
-    .nav__menu-left, .nav__menu-right{
+    .nav__menu-left, .nav__menu-right {
         margin: 0;
         list-style-type: none;
         display: block;
     }
-    
-    .nav__menu-links{
+    .nav__menu-links {
         display: block;
         margin-bottom: 1.5em;
         text-decoration: none;
     }
-    .nav__menu-links:nth-child(4){
+    .nav__menu-links:nth-child(4) {
         margin: 0;
     }
     /*********************** HAMBURGER MENU ***********************/
     /***********************      LOGO      ***********************/
-    .logo__bialokosz{
+    .logo__bialokosz {
         display: none;
     }
-    .logo__bialokosz__mobile{
+    .logo__bialokosz__mobile {
         display: block;
         width: 45%;
         position: absolute;
@@ -137,84 +142,77 @@ body{
     }
     /***********************      LOGO      ***********************/
     /********************** CONTACT SECTION  **********************/
-    .invitation{
+    .invitation {
         position: relative;
         top: 5em;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .contact{
+    .contact {
         position: relative;
         top: 3.5em;
     }
-    .contact__details-party{
+    .contact__details-party {
         display: flex;
         justify-content: space-around;
     }
-    .contact__details-party-header,
-    .contact__details-booking-header,
-    .contact__details-address-header{
+    .contact__details-party-header, .contact__details-booking-header, .contact__details-address-header {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 2em 0 0 0;
     }
-    .contact__details-booking-text,
-    .contact__details-address-text{
+    .contact__details-booking-text, .contact__details-address-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .contact__details-address-specific,
-    .contact__details-text,
-    .contact__details-phone,
-    .contact__details-email{
+    .contact__details-address-specific, .contact__details-text, .contact__details-phone, .contact__details-email {
         margin: 0.2em;
         text-align: center;
         width: 100%;
     }
-    .contact__details-address-map-wrap{
+    .contact__details-address-map-wrap {
         margin: 0;
     }
-    .contact__details-address-map{
+    .contact__details-address-map {
         position: relative;
         height: 15em;
         width: 100vw;
         margin: 0;
         padding: 0;
     }
-    .contact__details-social-media,
-    .social__media{
+    .contact__details-social-media, .social__media {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
-    .social__media{
+    .social__media {
         margin: 1em 0 0 0;
     }
-    .contact__details-social-media-icon{
+    .contact__details-social-media-icon {
         height: 20%;
         width: 20%;
         margin: 0;
         padding: 0;
     }
-    .footer{
+    .footer {
         width: 100vw;
         position: absolute;
         top: 75em;
-        margin:0;
+        margin: 0;
         font-size: .8em;
         height: 2em;
     }
-    .footer__wrapper{
+    .footer__wrapper {
         display: flex;
         justify-content: center;
         text-align: center;
     }
-    .footer__text{
+    .footer__text {
         font-size: .7em;
     }
 }
