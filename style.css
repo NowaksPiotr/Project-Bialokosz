@@ -116,8 +116,11 @@ body{
     
     .nav__menu-links{
         display: block;
-        margin-bottom: .5em;
+        margin-bottom: 1.5em;
         text-decoration: none;
+    }
+    .nav__menu-links:nth-child(4){
+        margin: 0;
     }
     /*********************** HAMBURGER MENU ***********************/
     /***********************      LOGO      ***********************/
