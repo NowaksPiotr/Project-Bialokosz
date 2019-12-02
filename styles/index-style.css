@@ -20,6 +20,7 @@
     .welcome__photo {
         height: 100%;
         width: 100%;
+        max-width: 390px;
     }
     /******************** WELCOME PHOTO *********************/
     /*******************  SCROLL BUTTON *********************/
@@ -116,11 +117,33 @@
         justify-content: center;
         align-items: center;
     }
-    .slider__photos-bialokosz{
+    .slider__photos-bialokosz,
+    .img__photo{
         position: relative;
+        top: 0;
+        left: 0;
         width: 100%;
+        max-width: 390px;
+        max-height: 15em;
     }
     /******************** GALLERY SLIDER ********************/
     /***************** SECTION DESCRIPTION ******************/
-
+    /*********************** FOOTER *************************/
+    .footer {
+        width: 100vw;
+        position: absolute;
+        top: 140em;
+        margin: 0;
+        font-size: .8em;
+        height: 2em;
+    }
+    .footer__wrapper {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer__text {
+        font-size: .7em;
+    }
+    /*********************** FOOTER *************************/
 }
