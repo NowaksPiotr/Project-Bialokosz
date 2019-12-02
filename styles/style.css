@@ -45,7 +45,7 @@ body {
         left: 10px;
         position: fixed;
         transition-duration: .5s;
-        z-index: 3;
+        z-index: 9999;
     }
     .hamburger__bar {
         position: absolute;
@@ -96,7 +96,7 @@ body {
         height: 100%;
         transition-duration: .8s;
         left: -100vw;
-        z-index: 1;
+        z-index: 999;
     }
     .nav--active {
         transition-duration: .8s;
