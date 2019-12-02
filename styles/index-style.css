@@ -1,4 +1,4 @@
-@media (max-width: 480px){
+@media (max-width: 480px) {
     /********************  WELCOME PHOTO *********************/
     .welcome {
         height: 100vh;
@@ -24,8 +24,7 @@
     }
     /******************** WELCOME PHOTO *********************/
     /*******************  SCROLL BUTTON *********************/
-    .scroll__button-wrapper,
-    .scroll__button-link{
+    .scroll__button-wrapper, .scroll__button-link {
         height: 4em;
         width: 4em;
         position: absolute;
@@ -37,7 +36,7 @@
         align-items: center;
         z-index: 2;
     }
-    .scroll__button{
+    .scroll__button {
         height: 2em;
         width: 2em;
         border-top: none;
@@ -48,33 +47,39 @@
         animation: scrollAnimation 2500ms ease infinite;
         opacity: 0;
     }
-    @keyframes scrollAnimation{
-        0%{ opacity: 0; transform: translateY(-6em) rotate(45deg); }
-        100%{ opacity: 1; transform: translateY(0em) rotate(45deg); }
+    @keyframes scrollAnimation {
+        0% {
+            opacity: 0;
+            transform: translateY(-6em) rotate(45deg);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0em) rotate(45deg);
+        }
     }
     /*******************  SCROLL BUTTON *********************/
     /***************** DESCRIPTION SECTION ******************/
-    .section{
+    .section {
         width: 100vw;
     }
-    .section__header{
+    .section__header {
         width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    /* .section__header-title{
-    } */
+    .p__description-text{
+        margin: 2em 1em 2em 1em;
+    }
+    .p__description-text-end{
+        text-align: center;
+    }
     /******************** GALLERY SLIDER ********************/
-    .div__gallery-slider{
-        height:15em;
+    .div__gallery-slider {
+        height: 15em;
         width: 100vw;
     }
-    .div__gallery-slider-buttons{
-
-    }
-    .div__gallery-slider-button-previous-wrapper,
-    .div__gallery-slider-button-next-wrapper{
+    .div__gallery-slider-button-previous-wrapper, .div__gallery-slider-button-next-wrapper {
         position: absolute;
         z-index: 1;
         width: 3em;
@@ -83,42 +88,39 @@
         justify-content: center;
         align-items: center;
     }
-    .div__gallery-slider-button-previous-wrapper{
-        left:0.5em;
-
+    .div__gallery-slider-button-previous-wrapper {
+        left: 0.5em;
     }
-    .div__gallery-slider-button-next-wrapper{
+    .div__gallery-slider-button-next-wrapper {
         right: 0.5em;
     }
-    .span__gallery-button-previous{
-         width: 1.5em;
-         height: 1.4em;
-         transform: rotate(45deg);
-         border-bottom: 3px solid white;
-         border-left: 3px solid white;
-         opacity: .5;
+    .span__gallery-button-previous {
+        width: 1.5em;
+        height: 1.4em;
+        transform: rotate(45deg);
+        border-bottom: 3px solid white;
+        border-left: 3px solid white;
+        opacity: .5;
     }
-    .span__gallery-button-next{
+    .span__gallery-button-next {
         width: 1.5em;
         height: 1.4em;
         transform: rotate(45deg);
         border-top: 3px solid white;
         border-right: 3px solid white;
         opacity: .5;
-   }
-    .span__gallery-button-previous:hover,
-    .span__gallery-button-next:hover{
+    }
+    .span__gallery-button-previous:hover, .span__gallery-button-next:hover {
         opacity: 1;
     }
-    .div__photos-wrapper{
-        height:15em;
+    .div__photos-wrapper {
+        height: 15em;
         width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .slider__photos-bialokosz,
-    .img__photo{
+    .slider__photos-bialokosz, .img__photo {
         position: relative;
         top: 0;
         left: 0;
@@ -131,9 +133,8 @@
     /*********************** FOOTER *************************/
     .footer {
         width: 100vw;
-        position: absolute;
-        top: 150em;
-        margin: 0;
+        position: relative;
+        top: 0;
         font-size: .8em;
         height: 2em;
     }

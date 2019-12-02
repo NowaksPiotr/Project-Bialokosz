@@ -201,8 +201,8 @@ body {
     }
     .footer {
         width: 100vw;
-        position: absolute;
-        top: 75em;
+        position: relative;
+        top: 7em;
         margin: 0;
         font-size: .8em;
         height: 2em;
