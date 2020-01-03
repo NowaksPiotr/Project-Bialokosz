@@ -14,7 +14,6 @@ let photos = [
     './assets/photos/slider/winter.jpg'
 ];
 let currentPhotoindex = 0;
-console.log(currentPhoto.src);
 //FIRST GALLERY
 
 //***********************SMOOTH SCROLL*************************************************************
