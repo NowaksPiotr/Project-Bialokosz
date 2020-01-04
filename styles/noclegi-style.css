@@ -1,4 +1,5 @@
 @media(max-width: 480px){
+    /****************************** TITLE ************************************/
     .div__page-title{
         position: relative;
         top: 5em;
@@ -9,4 +10,23 @@
     .div__page-title-text{
         font-size: 1.5em;
     }
+    /****************************** TITLE ************************************/
+    /*************************** MAIN CONTENT ********************************/
+    .section{
+        width: 100vw;
+        position: relative;
+        top: 2em;
+    }
+    .div__description-wrapper{
+        position: relative;
+        top: 2em;
+        width: inherit;
+    }
+    .div__description-title{
+        width: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*************************** MAIN CONTENT ********************************/
 }
