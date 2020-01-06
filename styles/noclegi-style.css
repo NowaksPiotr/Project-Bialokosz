@@ -28,5 +28,22 @@
         justify-content: center;
         align-items: center;
     }
+    .div__description-paragraphs-wrapper{
+        width: 90vw;
+        margin: 2em 1em 2em 1em;
+    }
+    .span__bold{
+        font-weight: bold;
+    }
+    .ul__service-list{
+        list-style: none;
+    }
+    .span__service-icon{
+        
+    }
+    .img__service-icon{
+        width: 10%;
+    }
+
     /*************************** MAIN CONTENT ********************************/
 }
