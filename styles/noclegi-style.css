@@ -1,49 +1,134 @@
-@media(max-width: 480px){
+@media(max-width: 480px) {
+    body {
+        line-height: 1.5em;
+    }
     /****************************** TITLE ************************************/
-    .div__page-title{
+    .div__page-title {
         position: relative;
         top: 5em;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .div__page-title-text{
+    .div__page-title-text {
         font-size: 1.5em;
     }
     /****************************** TITLE ************************************/
-    /*************************** MAIN CONTENT ********************************/
-    .section{
+    /*********************** SECTION DESCRIPTION *****************************/
+    .section {
         width: 100vw;
         position: relative;
         top: 2em;
     }
-    .div__description-wrapper{
+    .div__description-wrapper, .div__offer-wrapper {
         position: relative;
         top: 2em;
         width: inherit;
     }
-    .div__description-title{
+    .div__description-title, .div__offer-title {
         width: inherit;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .div__description-paragraphs-wrapper{
+    .div__description-paragraphs-wrapper {
         width: 90vw;
         margin: 2em 1em 2em 1em;
     }
-    .span__bold{
+    .span__bold {
         font-weight: bold;
     }
-    .ul__service-list{
+    .ul__service-list {
         list-style: none;
     }
-    .span__service-icon{
-        
+    .li__service-text {
+        margin: 0 0 1em 0;
     }
-    .img__service-icon{
+    .span__service-icon {
+        margin-right: 1.5em;
+    }
+    .img__service-icon {
         width: 10%;
     }
-
-    /*************************** MAIN CONTENT ********************************/
+    /*********************** SECTION DESCRIPTION *****************************/
+    /************************** SECTION OFFER ********************************/
+    .section__offer {
+        position: relative;
+        top: 6em;
+        width: 100vw;
+    }
+    .div__offer-title {
+        margin-bottom: 3em;
+    }
+    .div__room-photo-wrapper {
+        width: inherit;
+        margin-bottom: 4em;
+    }
+    .div__room-photo-slider {
+        width: 100vw;
+        height: 15em;
+    }
+    .div__room-photo-button-previous-wrapper, .div__room-photo-button-next-wrapper {
+        position: absolute;
+        z-index: 1;
+        width: 3em;
+        height: 15em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .div__room-photo-button-previous-wrapper {
+        left: .5em;
+    }
+    .div__room-photo-button-next-wrapper {
+        right: .5em;
+    }
+    .span__room-photo-previous {
+        width: 1.5em;
+        height: 1.4em;
+        transform: rotate(45deg);
+        border-bottom: 3px solid rgb(255, 255, 255);
+        border-left: 3px solid rgb(255, 255, 255);
+        opacity: .5;
+    }
+    .span__room-photo-next {
+        width: 1.5em;
+        height: 1.4em;
+        transform: rotate(45deg);
+        border-top: 3px solid rgb(255, 255, 255);
+        border-right: 3px solid white;
+        opacity: .5;
+    }
+    .span__room-photo-previous:hover, .span__room-photo-next:hover {
+        opacity: 1;
+    }
+    .img__room-photo {
+        height: 15em;
+        width: 100vw;
+    }
+    .div__room-description-wrapper {
+        width: 90vw;
+        margin: 1em 1em 2em 1em;
+    }
+    .span__room-type, .span__room-price {
+        display: block;
+        width: 100%;
+        text-align: center;
+        letter-spacing: .1em;
+    }
+    .span__room-price {
+        font-size: 1.2em;
+    }
+    .ul__list-of-services{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .li__services{
+        display: inline;
+        font-size: .9em;
+    }
+    /************************** SECTION OFFER ********************************/
 }
