@@ -6,6 +6,9 @@
         justify-content: center;
         align-items: center;
     }
+    .invitation__header-text{
+        font-size: 2em !important;
+    }
     .contact {
         position: relative;
         top: 3.5em;
