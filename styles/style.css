@@ -141,7 +141,62 @@ body {
         transform: translate(-50%);
     }
     /***********************      LOGO      ***********************/
-    /********************** CONTACT SECTION  **********************/
+    /******************** GALLERY SLIDER ********************/
+    .div__gallery-slider {
+        height: 15em;
+        width: 100vw;
+    }
+    .div__gallery-slider-button-previous-wrapper, .div__gallery-slider-button-next-wrapper {
+        position: absolute;
+        z-index: 1;
+        width: 3em;
+        height: 15em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .div__gallery-slider-button-previous-wrapper {
+        left: 0.5em;
+    }
+    .div__gallery-slider-button-next-wrapper {
+        right: 0.5em;
+    }
+    .span__gallery-button-previous {
+        width: 1.5em;
+        height: 1.4em;
+        transform: rotate(45deg);
+        border-bottom: 3px solid rgb(255, 255, 255);
+        border-left: 3px solid rgb(255, 255, 255);
+        opacity: .5;
+    }
+    .span__gallery-button-next {
+        width: 1.5em;
+        height: 1.4em;
+        transform: rotate(45deg);
+        border-top: 3px solid rgb(255, 255, 255);
+        border-right: 3px solid white;
+        opacity: .5;
+    }
+    .span__gallery-button-previous:hover, .span__gallery-button-next:hover {
+        opacity: 1;
+    }
+    .div__photos-wrapper {
+        height: 15em;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .slider__photos-bialokosz, .img__photo {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 390px;
+        max-height: 15em;
+    }
+    /******************** GALLERY SLIDER ********************/
+    /******************** CONTACT SECTION  ******************/
     .invitation {
         position: relative;
         top: 5em;

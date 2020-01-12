@@ -60,47 +60,8 @@
     .div__offer-title {
         margin-bottom: 3em;
     }
-    .div__room-photo-wrapper {
-        width: inherit;
-        margin-bottom: 4em;
-    }
-    .div__room-photo-slider {
+    .div__gallery-slider-noclegi {
         width: 100vw;
-        height: 15em;
-    }
-    .div__room-photo-button-previous-wrapper, .div__room-photo-button-next-wrapper {
-        position: absolute;
-        z-index: 1;
-        width: 3em;
-        height: 15em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .div__room-photo-button-previous-wrapper {
-        left: .5em;
-    }
-    .div__room-photo-button-next-wrapper {
-        right: .5em;
-    }
-    .span__room-photo-previous {
-        width: 1.5em;
-        height: 1.4em;
-        transform: rotate(45deg);
-        border-bottom: 3px solid rgb(255, 255, 255);
-        border-left: 3px solid rgb(255, 255, 255);
-        opacity: .5;
-    }
-    .span__room-photo-next {
-        width: 1.5em;
-        height: 1.4em;
-        transform: rotate(45deg);
-        border-top: 3px solid rgb(255, 255, 255);
-        border-right: 3px solid white;
-        opacity: .5;
-    }
-    .span__room-photo-previous:hover, .span__room-photo-next:hover {
-        opacity: 1;
     }
     .img__room-photo {
         height: 15em;
