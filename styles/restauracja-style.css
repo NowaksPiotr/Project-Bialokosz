@@ -1,0 +1,6 @@
+@media(max-width: 480px) {
+    .div__photos-wrapper, .img__restauracja-photo{
+        width: 100vh;
+        height: 15em;
+    }
+}
