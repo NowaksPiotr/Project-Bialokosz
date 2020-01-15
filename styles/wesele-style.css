@@ -1,0 +1,11 @@
+@media(max-width: 480px) {
+    .img__wedding-photo{
+        position: relative;
+        left: 0;
+        height: 15em;
+        width: 100%;
+    }
+    .p__direct-client-focus{
+        text-align: center;
+    }
+}
