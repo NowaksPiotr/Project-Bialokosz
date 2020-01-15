@@ -31,25 +31,6 @@
     .description__title-text, .offer__title-text{
         font-size: 1.2em;
     }
-    .div__description-paragraphs-wrapper {
-        width: 90vw;
-        margin: 2em 1em 2em 1em;
-    }
-    .span__bold {
-        font-weight: bold;
-    }
-    .ul__service-list {
-        list-style: none;
-    }
-    .li__service-text {
-        margin: 0 0 1em 0;
-    }
-    .span__service-icon {
-        margin-right: 1.5em;
-    }
-    .img__service-icon {
-        width: 10%;
-    }
     /*********************** SECTION DESCRIPTION *****************************/
     /************************** SECTION OFFER ********************************/
     .section__offer {

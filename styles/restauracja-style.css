@@ -1,6 +1,23 @@
 @media(max-width: 480px) {
-    .div__photos-wrapper, .img__restauracja-photo{
-        width: 100vh;
+    .article__photo{
+        height: 100vh;
+    }
+    .article__title, .article__description{
+        width: 100vw;
+    }
+    .img__restauracja-photo{
+        position: relative;
+        left: 0;
         height: 15em;
+        width: 100%;
+    }
+    .li__open-hours{
+        display: inline;
+    }
+    .li__open-hours:nth-child(even){
+        margin-left: .5em;
+    }
+    .article__gallery{
+        margin-bottom: 5em;
     }
 }

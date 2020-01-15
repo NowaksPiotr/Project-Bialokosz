@@ -196,6 +196,26 @@ body {
         max-height: 15em;
     }
     /******************** GALLERY SLIDER ********************/
+    /*************** COMMON BLOCK AND ELEMENTS **************/
+    .ul__service-list {
+        list-style: none;
+    }
+    .li__service-text {
+        margin: 0 0 1em 0;
+    }
+    .span__service-icon {
+        margin-right: .8em;
+    }
+    .img__service-icon {
+        width: 10%;
+    }
+    .div__description-paragraphs-wrapper {
+        width: 90vw;
+        margin: 2em 1em 2em 1em;
+    }
+    .span__bold {
+        font-weight: bold;
+    }
     /******************** CONTACT SECTION  ******************/
     .invitation {
         position: relative;
