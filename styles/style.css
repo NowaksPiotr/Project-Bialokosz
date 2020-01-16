@@ -33,6 +33,11 @@ body {
 /********** MEDIA QUERIES FOR DEVICE MAX-WIDTH: 480px ****************/
 
 @media(max-width: 480px) {
+    html, body{
+        margin: 0;
+        padding: 0;
+        z-index: -999;
+    }
     /*********************** HAMBURGER MENU ***********************/
     .hamburger {
         width: 20px;

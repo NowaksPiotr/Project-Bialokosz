@@ -3,19 +3,18 @@
     .welcome {
         height: 100vh;
         position: relative;
-        top: -1em;
-        margin: 0;
-        padding: 0;
-        z-index: 1;
-    }
-    .welcome__wrapper {
-        position: relative;
-        top: 6em;
+        top: 0;
         margin: 0;
         padding: 0;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
+    }
+    .welcome__wrapper {
+        position: relative;
+        top: -1.5em;
+        margin: 0;
+        padding: 0;
     }
     .welcome__photo {
         height: 100%;
@@ -29,12 +28,12 @@
         width: 4em;
         position: absolute;
         left: 50%;
-        bottom: 4em;
+        bottom: 2em;
         transform: translateX(-50%);
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 2;
+        z-index: 10;
     }
     .scroll__button {
         height: 2em;
@@ -60,14 +59,21 @@
     }
     /*******************  SCROLL BUTTON *********************/
     /***************** DESCRIPTION SECTION ******************/
-    .section {
+    .description {
         width: 100vw;
     }
-    .section__header {
-        width: 100vw;
+    .description__mobile-logo-wrapper{
+        position: relative;
+        top: 0;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+    }
+    .logo__image{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 50%;
     }
     .p__description-text {
         margin: 2em 1em 2em 1em;
@@ -77,20 +83,6 @@
     }
     /***************** SECTION DESCRIPTION ******************/
     /*********************** FOOTER *************************/
-    .footer {
-        width: 100vw;
-        position: relative;
-        top: 0;
-        font-size: .8em;
-        height: 2em;
-    }
-    .footer__wrapper {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-    .footer__text {
-        font-size: .7em;
-    }
+
     /*********************** FOOTER *************************/
 }

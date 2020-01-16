@@ -1,6 +1,6 @@
 //SMOOTH SCROLL
 let scrollButton = document.querySelector('.scroll__button');
-let headerElement = document.querySelector('.section__header');
+let headerElement = document.querySelector('.description__mobile-logo-wrapper');
 //SMOOTH SCROLL
 //FIRST GALLERY
 let nextGalleryButton = document.querySelector('.span__gallery-button-next');
