@@ -35,7 +35,6 @@ body {
 @media(max-width: 480px) {
     /*********************** HAMBURGER MENU ***********************/
     .link {
-        text-decoration: underline;
         color: rgb(119, 117, 114);
     }
     .hamburger {
@@ -84,7 +83,7 @@ body {
     .hamburger__bar--active::after {
         transform: rotateZ(-45deg) scaleX(1.25) translate(3px, -5px);
     }
-    .nav {
+    .navigation__menu {
         position: fixed;
         margin: 0;
         top: 0;
@@ -98,9 +97,22 @@ body {
         left: -100vw;
         z-index: 999;
     }
-    .nav--active {
+    .navigation__menu--active {
         transition-duration: .8s;
         left: 0;
+    }
+    .background{
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(80,80,80, .5);
+        z-index: 3;
+        display: none;
+    }
+    .background--active{
+        display: block;
     }
     .mobile__hamburger-logo-container {
         margin: 2em 0 0 0;
