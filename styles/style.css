@@ -34,9 +34,6 @@ body {
 
 @media(max-width: 480px) {
     /*********************** HAMBURGER MENU ***********************/
-    .link {
-        color: rgb(119, 117, 114);
-    }
     .hamburger {
         width: 20px;
         height: 30px;
@@ -114,29 +111,29 @@ body {
     .background--active{
         display: block;
     }
-    .mobile__hamburger-logo-container {
+    .hamburger__mobile-logo-container {
         margin: 2em 0 0 0;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .mobile__hamburger-logo {
+    .hamburger__mobile-logo {
         position: relative;
         display: block;
         width: 50%;
     }
-    .nav__menu-left, .nav__menu-right {
+    .navigation__menu-left, .navigation__menu-right {
         margin: 0;
         list-style-type: none;
         display: block;
     }
-    .nav__menu-links {
+    .navigation__menu-links {
         display: block;
         margin-bottom: 1.5em;
         text-decoration: none;
     }
-    .nav__menu-links:nth-child(4) {
+    .navigation__menu-links:nth-child(4) {
         margin: 0;
     }
     /*********************** HAMBURGER MENU ***********************/
