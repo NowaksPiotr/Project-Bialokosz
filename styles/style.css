@@ -156,11 +156,11 @@ body {
     }
     /***********************      LOGO      ***********************/
     /******************** GALLERY SLIDER ********************/
-    .div__gallery-slider {
+    .gallery {
         height: 15em;
         width: 100vw;
     }
-    .div__gallery-slider-button-previous-wrapper, .div__gallery-slider-button-next-wrapper {
+    .gallery__slider-button-previous-wrapper, .gallery__slider-button-next-wrapper {
         position: absolute;
         z-index: 1;
         width: 3em;
@@ -169,13 +169,13 @@ body {
         justify-content: center;
         align-items: center;
     }
-    .div__gallery-slider-button-previous-wrapper {
+    .gallery__slider-button-previous-wrapper {
         left: 0.5em;
     }
-    .div__gallery-slider-button-next-wrapper {
+    .gallery__slider-button-next-wrapper {
         right: 0.5em;
     }
-    .span__gallery-button-previous {
+    .gallery__button-previous {
         width: 1.5em;
         height: 1.4em;
         transform: rotate(45deg);
@@ -183,7 +183,7 @@ body {
         border-left: 3px solid rgb(255, 255, 255);
         opacity: .5;
     }
-    .span__gallery-button-next {
+    .gallery__button-next {
         width: 1.5em;
         height: 1.4em;
         transform: rotate(45deg);
@@ -191,23 +191,25 @@ body {
         border-right: 3px solid white;
         opacity: .5;
     }
-    .span__gallery-button-previous:hover, .span__gallery-button-next:hover {
+    .gallery__button-previous:hover, .gallery__button-next:hover {
         opacity: 1;
     }
-    .div__photos-wrapper {
+    .photos__wrapper {
         height: 15em;
         width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .slider__photos-bialokosz, .img__photo {
+    .slide__photos-bialokosz, .img__photo {
         position: relative;
         top: 0;
         left: 0;
         width: 100%;
         max-width: 390px;
         max-height: 15em;
+        border-radius: 10% 0 10% 0;
+
     }
     /******************** GALLERY SLIDER ********************/
     /*************** COMMON BLOCK AND ELEMENTS **************/
@@ -292,7 +294,6 @@ body {
     .footer {
         width: 100vw;
         position: relative;
-        top: 7em;
         margin: 0;
         font-size: .8em;
         height: 2em;

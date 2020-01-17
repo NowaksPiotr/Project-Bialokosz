@@ -58,7 +58,7 @@
     }
     /*******************  SCROLL BUTTON *********************/
     /***************** DESCRIPTION SECTION ******************/
-    .description {
+    .description, .description__title-wrapper {
         width: 100vw;
     }
     .description__mobile-logo-wrapper{
@@ -72,12 +72,29 @@
         position: relative;
         left: 50%;
         transform: translate(-50%);
-        width: 50%;
+        width: 45%;
     }
-    .p__description-text {
+    .description__title-wrapper, .description__title{
+        margin: 0;
+        padding: 0;
+    }
+    .description__title-wrapper{
+        margin-bottom: 2em;
+    }
+    .description__title{
+        text-align: center;
+    }
+    .description__paragraphs-wrapper{
+        padding: 1em 0 1em 0;
+        background-color: rgb(220, 220, 220);
+        border-radius: 20% 0 20% 0;
+        margin: 3em 0 3em 0;
+    }
+    .description__text {
         margin: 2em 1em 2em 1em;
+        text-align: justify;
     }
-    .p__description-text-end {
+    .description__text-end {
         text-align: center;
     }
     /***************** SECTION DESCRIPTION ******************/

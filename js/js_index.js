@@ -3,8 +3,8 @@ let scrollButton = document.querySelector('.scroll__button');
 let headerElement = document.querySelector('.description__mobile-logo-container');
 //SMOOTH SCROLL
 //FIRST GALLERY
-let nextGalleryButton = document.querySelector('.span__gallery-button-next');
-let previousGalleryButton = document.querySelector('.span__gallery-button-previous');
+let nextGalleryButton = document.querySelector('.gallery__button-next');
+let previousGalleryButton = document.querySelector('.gallery__button-previous');
 let currentPhoto = document.getElementById('first__gallery');
 let photos = [
     './assets/photos/slider/boat.jpg',
