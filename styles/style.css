@@ -209,7 +209,11 @@ body {
         max-width: 390px;
         max-height: 15em;
         border-radius: 10% 0 10% 0;
-
+        animation: showUp .8s ease-in;
+    }
+    @keyframes showUp{
+        0%{ opacity: 0; }
+        100%{ opacity: 1; }
     }
     /******************** GALLERY SLIDER ********************/
     /*************** COMMON BLOCK AND ELEMENTS **************/
