@@ -1,6 +1,6 @@
 //SMOOTH SCROLL
 let scrollButton = document.querySelector('.scroll__button');
-let headerElement = document.querySelector('.description__mobile-logo-wrapper');
+let headerElement = document.querySelector('.description__mobile-logo-container');
 //SMOOTH SCROLL
 //FIRST GALLERY
 let nextGalleryButton = document.querySelector('.span__gallery-button-next');
@@ -17,27 +17,27 @@ let currentPhotoindex = 0;
 //FIRST GALLERY
 
 //***********************SMOOTH SCROLL*************************************************************
-scrollButton.addEventListener('click', function smoothScroll(){
+scrollButton.addEventListener('click', () => {
     headerElement.scrollIntoView({
         behavior: 'smooth'
-    });
-});
-//***********************SMOOTH SCROLL*************************************************************
-//***********************FIRST GALLERY*************************************************************
-nextGalleryButton.addEventListener('click', nextPhoto);
+    })
+})
+    //***********************SMOOTH SCROLL*************************************************************
+    //***********************FIRST GALLERY*************************************************************
+    nextGalleryButton.addEventListener('click', nextPhoto);
 previousGalleryButton.addEventListener('click', previousPhoto);
 
-function nextPhoto(){
+function nextPhoto() {
     currentPhotoindex++;
     currentPhoto.src = photos[currentPhotoindex];
-    if(currentPhotoindex == 5){
+    if (currentPhotoindex == 5) {
         currentPhotoindex = 0;
         currentPhoto.src = photos[currentPhotoindex];
     }
 }
 
-function previousPhoto(){
-    if(currentPhotoindex == 0){
+function previousPhoto() {
+    if (currentPhotoindex == 0) {
         currentPhotoindex = 5;
         currentPhoto.src = photos[currentPhotoindex];
     }

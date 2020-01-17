@@ -45,7 +45,6 @@
         transform: rotate(45deg);
         animation: scrollAnimation 2500ms ease infinite;
         opacity: 0;
-        z-index: 3;
     }
     @keyframes scrollAnimation {
         0% {
