@@ -2,24 +2,8 @@
     body {
         line-height: 1.5em;
     }
-    /****************************** TITLE ************************************/
-    .div__page-title {
-        position: relative;
-        top: 5em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    /****************************** TITLE ************************************/
     /*********************** SECTION DESCRIPTION *****************************/
-    .section {
-        width: 100vw;
-        position: relative;
-        top: 2em;
-    }
     .div__description-wrapper, .div__offer-wrapper {
-        position: relative;
-        top: 2em;
         width: inherit;
     }
     .div__description-title, .div__offer-title {
@@ -56,7 +40,7 @@
         display: block;
         width: 100%;
         text-align: center;
-        letter-spacing: .1em;
+        text-decoration: underline;
     }
     .span__room-price {
         font-size: 1.2em;

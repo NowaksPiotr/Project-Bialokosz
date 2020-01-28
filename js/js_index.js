@@ -1,7 +1,3 @@
-//SMOOTH SCROLL
-let scrollButton = document.querySelector('.scroll__button');
-let headerElement = document.querySelector('.description__mobile-logo-container');
-//SMOOTH SCROLL
 // GALLERY
 let nextGalleryButton = document.querySelector('.gallery__button-next');
 let previousGalleryButton = document.querySelector('.gallery__button-previous');
@@ -16,13 +12,6 @@ let firstGalleryPhotos = [
 let currentPhotoindex = 0;
 // GALLERY
 
-//***********************SMOOTH SCROLL*************************************************************
-scrollButton.addEventListener('click', () => {
-    headerElement.scrollIntoView({
-        behavior: 'smooth'
-    })
-})
-//***********************SMOOTH SCROLL*************************************************************
 //***********************FIRST GALLERY*************************************************************
 nextGalleryButton.addEventListener('click', nextPhoto);
 previousGalleryButton.addEventListener('click', previousPhoto);

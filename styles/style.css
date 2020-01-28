@@ -22,10 +22,6 @@ body {
     cursor: pointer;
 }
 
-.icons__credit {
-    display: none;
-}
-
 .mobile__hamburger-logo {
     display: none;
 }
@@ -33,7 +29,7 @@ body {
 /********** MEDIA QUERIES FOR DEVICE MAX-WIDTH: 480px ****************/
 
 @media(max-width: 480px) {
-    html, body{
+    html, body {
         margin: 0;
         padding: 0;
         z-index: -999;
@@ -103,17 +99,17 @@ body {
         transition-duration: .8s;
         left: 0;
     }
-    .background{
+    .background {
         position: fixed;
         left: 0;
         top: 0;
         height: 100vh;
         width: 100vw;
-        background-color: rgba(80,80,80, .5);
+        background-color: rgba(80, 80, 80, .5);
         z-index: 3;
         display: none;
     }
-    .background--active{
+    .background--active {
         display: block;
     }
     .hamburger__mobile-logo-container {
@@ -142,6 +138,64 @@ body {
         margin: 0;
     }
     /*********************** HAMBURGER MENU ***********************/
+    /********************  WELCOME PHOTO *********************/
+    .welcome {
+        height: 100vh;
+        position: relative;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .welcome__wrapper {
+        position: relative;
+        top: -1.5em;
+        margin: 0;
+        padding: 0;
+    }
+    .welcome__photo {
+        height: 100%;
+        width: 100%;
+        max-width: 390px;
+    }
+    /******************** WELCOME PHOTO *********************/
+    /*******************  SCROLL BUTTON *********************/
+    .scroll__button-wrapper, .scroll__button-link {
+        height: 4em;
+        width: 4em;
+        position: absolute;
+        left: 50%;
+        bottom: 2em;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+    .scroll__button {
+        height: 2em;
+        width: 2em;
+        border-top: none;
+        border-left: none;
+        border-bottom: 4px solid white;
+        border-right: 4px solid white;
+        transform: rotate(45deg);
+        animation: scrollAnimation 2500ms ease infinite;
+        opacity: 0;
+    }
+    @keyframes scrollAnimation {
+        0% {
+            opacity: 0;
+            transform: translateY(-6em) rotate(45deg);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0em) rotate(45deg);
+        }
+    }
+    /*******************  SCROLL BUTTON *********************/
     /***********************      LOGO      ***********************/
     .logo__bialokosz {
         display: none;
@@ -155,6 +209,51 @@ body {
         transform: translate(-50%);
     }
     /***********************      LOGO      ***********************/
+    /******************* DESCRIPTION SECTION **********************/
+    .description, .description__title-wrapper {
+        width: 100vw;
+    }
+    .description__mobile-logo-wrapper {
+        position: relative;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .logo__image {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 45%;
+    }
+    .description__title-wrapper, .description__title {
+        margin: 0;
+        padding: 0;
+    }
+    .description__title-wrapper {
+        margin-bottom: 2em;
+    }
+    .description__title {
+        text-align: center;
+    }
+    .description__paragraphs-wrapper{
+        padding: 1em 0 1em 0;
+        background-color: rgb(220, 220, 220);
+        border-radius: 20% 0 20% 0;
+        margin: 3em 0 3em 0;
+    }
+    .description__text {
+        margin: 2em 1em 2em 1em;
+        text-align: left;
+    }
+    .description__text--offer{
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .description__text-end {
+        text-align: center;
+    }
+    /******************* DESCRIPTION SECTION **********************/
     /******************** GALLERY SLIDER ********************/
     .gallery {
         height: 15em;
@@ -188,7 +287,7 @@ body {
         height: 1.4em;
         transform: rotate(45deg);
         border-top: 3px solid rgb(255, 255, 255);
-        border-right: 3px solid white;
+        border-right: 3px solid rgb(255, 255, 255);
         opacity: .5;
     }
     .gallery__button-previous:hover, .gallery__button-next:hover {
@@ -209,11 +308,15 @@ body {
         max-width: 390px;
         max-height: 15em;
         border-radius: 10% 0 10% 0;
-        animation: showUp .8s ease-in;
+        animation: showUp 1s ease-in;
     }
-    @keyframes showUp{
-        0%{ opacity: 0; }
-        100%{ opacity: 1; }
+    @keyframes showUp {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
     /******************** GALLERY SLIDER ********************/
     /*************** COMMON BLOCK AND ELEMENTS **************/
