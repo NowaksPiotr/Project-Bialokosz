@@ -35,6 +35,7 @@
     .div__room-description-wrapper {
         width: 90vw;
         margin: 1em 1em 2em 1em;
+        text-align: center;
     }
     .span__room-type {
         display: block;
@@ -52,11 +53,9 @@
         list-style: none;
         margin: 0;
         padding: 0;
-        display: flex;
-        justify-content: space-between;
-    }
+        text-align: left;
+    }11
     .li__services{
-        display: inline;
         font-size: .9em;
     }
     /************************** SECTION OFFER ********************************/

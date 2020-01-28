@@ -197,6 +197,9 @@ body {
     }
     /*******************  SCROLL BUTTON *********************/
     /***********************      LOGO      ***********************/
+    .logo{
+        z-index: 10;
+    }
     .logo__bialokosz {
         display: none;
     }
@@ -207,6 +210,7 @@ body {
         top: .2em;
         left: 50%;
         transform: translate(-50%);
+        z-index: 10;
     }
     /***********************      LOGO      ***********************/
     /***********************   SEPARATOR    ***********************/
@@ -356,6 +360,9 @@ body {
     .span__bold {
         font-weight: bold;
     }
+    .a__contact-number{
+        display: block;
+    }
     /******************** CONTACT SECTION  ******************/
     .invitation {
         position: relative;
@@ -428,5 +435,9 @@ body {
     }
     .footer__text {
         font-size: .7em;
+    }
+    .wrap{
+        display: flex;
+        justify-content: center;
     }
 }
