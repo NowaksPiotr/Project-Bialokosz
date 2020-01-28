@@ -36,13 +36,16 @@
         width: 90vw;
         margin: 1em 1em 2em 1em;
     }
-    .span__room-type, .span__room-price {
+    .span__room-type {
         display: block;
         width: 100%;
         text-align: center;
         text-decoration: underline;
     }
     .span__room-price {
+        display: block;
+        width: 100%;
+        text-align: left;
         font-size: 1.2em;
     }
     .ul__list-of-services{

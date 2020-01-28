@@ -209,6 +209,22 @@ body {
         transform: translate(-50%);
     }
     /***********************      LOGO      ***********************/
+    /***********************   SEPARATOR    ***********************/
+    .separator{
+        width: 100vw;
+        margin: 2em 0 2em 0;
+    }
+    .separator__wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .separator__image{
+        width: 100%;
+        height: 1.5em;
+    }
+    /***********************   SEPARATOR    ***********************/
     /******************* DESCRIPTION SECTION **********************/
     .description, .description__title-wrapper {
         width: 100vw;
