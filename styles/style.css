@@ -250,8 +250,11 @@ body {
         margin: 0;
         padding: 0;
     }
-    .description__title-wrapper {
+    .description__title-wrapper--big{
         margin-bottom: 4em;
+    }
+    .description__title-wrapper {
+        margin-bottom: 2em;
     }
     .description__title {
         text-align: center;
@@ -270,7 +273,7 @@ body {
         text-align: center;
         font-size: 1.3em;
     }
-    .description__text--av, .description__text--asteriks, .description__text--end {
+    .description__text--av, .desctiption__text--focus, .description__text--asteriks, .description__text--end {
         text-align: center;
     }
     .offer {
