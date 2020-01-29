@@ -251,7 +251,7 @@ body {
         padding: 0;
     }
     .description__title-wrapper {
-        margin-bottom: 2em;
+        margin-bottom: 4em;
     }
     .description__title {
         text-align: center;
@@ -270,8 +270,37 @@ body {
         text-align: center;
         font-size: 1.3em;
     }
-    .description__text-end {
+    .description__text--av, .description__text--asteriks, .description__text--end {
         text-align: center;
+    }
+    .offer {
+        position: relative;
+        top: 2em;
+        width: 100vw;
+    }
+
+    .room__description-wrapper {
+        width: 90vw;
+        margin: 1em 1em 2em 1em;
+        text-align: center;
+    }
+    .room__type {
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .room__price {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    .service__list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: left;
     }
     /******************* DESCRIPTION SECTION **********************/
     /******************** GALLERY SLIDER ********************/
@@ -340,17 +369,10 @@ body {
     }
     /******************** GALLERY SLIDER ********************/
     /*************** COMMON BLOCK AND ELEMENTS **************/
-    .ul__service-list {
-        list-style: none;
-        margin-left: -1.5em;
-    }
-    .li__service-text {
-        margin: 0 0 1em 0;
-    }
-    .span__service-icon {
+    .service__icon-wrapper {
         margin-right: .8em;
     }
-    .img__service-icon {
+    .service__icon {
         height: 1em;
     }
     .div__description-paragraphs-wrapper {
@@ -360,8 +382,10 @@ body {
     .span__bold {
         font-weight: bold;
     }
-    .a__contact-number{
+    .contact__number{
         display: block;
+        margin: 1em 0 1em 0;
+        text-align: center;
     }
     /******************** CONTACT SECTION  ******************/
     .invitation {
@@ -424,9 +448,8 @@ body {
     .footer {
         width: 100vw;
         position: relative;
-        margin: 0;
+        margin-top: 2em;
         font-size: .8em;
-        height: 2em;
     }
     .footer__wrapper {
         display: flex;
@@ -434,10 +457,12 @@ body {
         text-align: center;
     }
     .footer__text {
+        padding-top: 1em;
         font-size: .7em;
     }
-    .wrap{
+    .services__wrapper{
         display: flex;
         justify-content: center;
+        margin: 0 0 2em 0;
     }
 }
