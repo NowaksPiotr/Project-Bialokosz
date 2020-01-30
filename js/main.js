@@ -1,13 +1,17 @@
 //HAMBURGER MENU
-let hamburger = document.querySelector('.hamburger__wrapper');
-let hamburgerBar = document.querySelector('.hamburger__bar');
-let nav = document.querySelector('.navigation__menu');
+const hamburger = document.querySelector('.hamburger__wrapper');
+const hamburgerBar = document.querySelector('.hamburger__bar');
+const nav = document.querySelector('.navigation__menu');
 const closeHamburgerBackground = document.querySelector('.background');
 //HAMBURGER MENU
 //SMOOTH SCROLL
-let scrollButton = document.querySelector('.scroll__button');
-let headerElement = document.querySelector('.description__mobile-logo-container');
+const scrollButton = document.querySelector('.scroll__button');
+const headerElement = document.querySelector('.description__mobile-logo-container');
 //SMOOTH SCROLL
+//DROPDOWN BUTTON
+const dropdownButton = document.querySelectorAll('.dropdown__button-wrapper');
+const dropdownButtonFirst = document.getElementById('dropdown__first');
+const dropdownButtonSecond = document.getElementById('dropdown__second');
 
 //***********************HAMBURGER MENU************************************************************
 
@@ -35,3 +39,11 @@ scrollButton.addEventListener('click', () => {
     })
 })
 //***********************SMOOTH SCROLL*************************************************************
+//***********************DROPDOWN BUTTON***********************************************************
+dropdownButton[0].addEventListener('click', ()=>{
+    console.log('Dziala!');
+});
+dropdownButton[2].addEventListener('click', ()=>{
+    console.log('dziala 2!');
+})
+//***********************DROPDOWN BUTTON***********************************************************
