@@ -197,7 +197,7 @@ body {
     }
     /***********************  SCROLL BUTTON ***********************/
     /***********************      LOGO      ***********************/
-    .logo{
+    .logo {
         z-index: 10;
     }
     .logo__bialokosz {
@@ -214,17 +214,17 @@ body {
     }
     /***********************      LOGO      ***********************/
     /***********************   SEPARATOR    ***********************/
-    .separator{
+    .separator {
         width: 100vw;
         margin: 2em 0 2em 0;
     }
-    .separator__wrapper{
+    .separator__wrapper {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .separator__image{
+    .separator__image {
         width: 100%;
         height: 1.5em;
     }
@@ -250,7 +250,7 @@ body {
         margin: 0;
         padding: 0;
     }
-    .description__title-wrapper--big{
+    .description__title-wrapper--big {
         margin-bottom: 4em;
     }
     .description__title-wrapper {
@@ -259,7 +259,7 @@ body {
     .description__title {
         text-align: center;
     }
-    .description__paragraphs-wrapper{
+    .description__paragraphs-wrapper {
         padding: 1em 0 1em 0;
         background-color: rgb(220, 220, 220);
         border-radius: 20% 0 20% 0;
@@ -269,11 +269,11 @@ body {
         margin: 2em 1em 2em 1em;
         text-align: left;
     }
-    .description__text--offer{
+    .description__text--offer {
         text-align: center;
         font-size: 1.3em;
     }
-    .description__text--special{
+    .description__text--special {
         margin: 1em 1em 0 1em;
     }
     .description__text--av, .desctiption__text--focus, .description__text--asteriks, .description__text--end {
@@ -284,7 +284,6 @@ body {
         top: 2em;
         width: 100vw;
     }
-
     .room__description-wrapper {
         width: 90vw;
         margin: 1em 1em 2em 1em;
@@ -302,24 +301,39 @@ body {
         text-align: center;
         font-size: 1.2em;
     }
-    .service__list{
+    .service__list {
         list-style: none;
         margin: 0;
         padding: 0;
         text-align: left;
     }
-    .service__list--special{
+    .service__list--special {
         list-style: circle;
     }
-    .service__text--special{
+    .service__text--special {
         margin: 0 0 .5em 0;
+    }
+    .service__list-terms--main {
+        list-style: upper-roman;
+    }
+    .service__list-terms--inner {
+        list-style: lower-alpha;
     }
     /******************* DESCRIPTION SECTION **********************/
     /******************* DROPDOWN BUTTON **************************/
-    .dropdown__button-wrapper{
+    .dropdown__button-wrapper {
         position: absolute;
         right: 2em;
         margin: 0 0 0 1.5em;
+    }
+    .service__list-terms--inner{
+        max-height: 0;
+        transition: max-height .5s ease-out;
+        overflow: hidden;
+    }
+    .service__list-terms--inner-active{
+        max-height: 1000px;
+        transition: max-height 1s .2s ease-in;
     }
     /******************* DROPDOWN BUTTON **************************/
     /******************** GALLERY SLIDER **************************/
@@ -401,7 +415,7 @@ body {
     .span__bold {
         font-weight: bold;
     }
-    .contact__number{
+    .contact__number {
         display: block;
         margin: 1em 0 1em 0;
         text-align: center;
@@ -479,10 +493,9 @@ body {
         padding-top: 1em;
         font-size: .7em;
     }
-    .services__wrapper{
+    .services__wrapper {
         display: flex;
         justify-content: center;
         margin: 0 0 2em 0;
     }
-
 }

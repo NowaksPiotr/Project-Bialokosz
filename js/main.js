@@ -9,7 +9,8 @@ const scrollButton = document.querySelector('.scroll__button');
 const headerElement = document.querySelector('.description__mobile-logo-container');
 //SMOOTH SCROLL
 //DROPDOWN BUTTON
-const dropdownButton = document.querySelectorAll('.dropdown__button-wrapper');
+const dropdownButton = document.querySelector('.test');
+const lista = document.querySelector('.testlist');
 const dropdownButtonFirst = document.getElementById('dropdown__first');
 const dropdownButtonSecond = document.getElementById('dropdown__second');
 
@@ -40,10 +41,7 @@ scrollButton.addEventListener('click', () => {
 })
 //***********************SMOOTH SCROLL*************************************************************
 //***********************DROPDOWN BUTTON***********************************************************
-dropdownButton[0].addEventListener('click', ()=>{
-    console.log('Dziala!');
-});
-dropdownButton[2].addEventListener('click', ()=>{
-    console.log('dziala 2!');
+dropdownButton.addEventListener('click', ()=>{
+    lista.classList.toggle('service__list-terms--inner-active');
 })
 //***********************DROPDOWN BUTTON***********************************************************
