@@ -8,6 +8,7 @@ const closeHamburgerBackground = document.querySelector('.background');
 const scrollButton = document.querySelector('.scroll__button');
 const headerElement = document.querySelector('.description__mobile-logo-container');
 //SMOOTH SCROLL
+
 //DROPDOWN BUTTON
 const dropdownButton = document.querySelectorAll('.dropdown__button-icon');
 const list = document.querySelectorAll('.dropdown__elements');
