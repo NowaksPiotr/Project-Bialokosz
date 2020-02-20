@@ -9,11 +9,8 @@ const scrollButton = document.querySelector('.scroll__button');
 const headerElement = document.querySelector('.description__mobile-logo-container');
 //SMOOTH SCROLL
 //DROPDOWN BUTTON
-const dropdownButton = document.querySelector('.test');
-const lista = document.querySelector('.testlist');
-const dropdownButtonFirst = document.getElementById('dropdown__first');
-const dropdownButtonSecond = document.getElementById('dropdown__second');
-
+const dropdownButton = document.querySelectorAll('.dropdown__button-icon');
+const list = document.querySelectorAll('.dropdown__elements');
 //***********************HAMBURGER MENU************************************************************
 
 hamburger.addEventListener('click', openHamburgerMenu);
@@ -41,7 +38,14 @@ scrollButton.addEventListener('click', () => {
 })
 //***********************SMOOTH SCROLL*************************************************************
 //***********************DROPDOWN BUTTON***********************************************************
-dropdownButton.addEventListener('click', ()=>{
-    lista.classList.toggle('service__list-terms--inner-active');
-})
+//If dropdownButton is availavle function is started
+if(dropdownButton){
+    dropdownButton.forEach(function(dropdownicon, index){
+        dropdownicon.addEventListener('click', ()=>{
+            dropdownicon.classList.toggle('dropdown__button-icon--rotate');
+            list[index].classList.toggle('dropdown__list-hidden');
+            list[index].classList.toggle('services__wrapper--special');
+        })
+    });
+}
 //***********************DROPDOWN BUTTON***********************************************************

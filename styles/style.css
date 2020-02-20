@@ -261,7 +261,7 @@ body {
     }
     .description__paragraphs-wrapper {
         padding: 1em 0 1em 0;
-        background-color: rgb(220, 220, 220);
+        background-color: rgb(255, 255, 255);
         border-radius: 20% 0 20% 0;
         margin: 3em 0 3em 0;
     }
@@ -309,6 +309,7 @@ body {
     }
     .service__list--special {
         list-style: circle;
+
     }
     .service__text--special {
         margin: 0 0 .5em 0;
@@ -316,7 +317,7 @@ body {
     .service__list-terms--main {
         list-style: upper-roman;
     }
-    .service__list-terms--inner {
+    .service__list-dropdown {
         list-style: lower-alpha;
     }
     /******************* DESCRIPTION SECTION **********************/
@@ -497,5 +498,22 @@ body {
         display: flex;
         justify-content: center;
         margin: 0 0 2em 0;
+    }
+    .services__wrapper--special{
+        max-height: 300em;
+        transition: max-height .8s ease-in;
+    }
+    .dropdown__button-icon {
+        width: 1em;
+        transition: .5s;
+    }
+    .dropdown__button-icon--rotate{
+        transform: rotate(180deg);
+        transition: .5s
+    }
+    .dropdown__list-hidden, .dropdown__ul-elements{
+        max-height: 0;
+        transition: max-height 1s ease-out;
+        overflow: hidden;
     }
 }
