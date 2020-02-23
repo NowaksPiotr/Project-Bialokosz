@@ -7,53 +7,78 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pałac Białokosz</title>
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/contact-style.css">
 </head>
 
 <body>
     <!-- HAMBURGER MENU -->
-    <div class="hamburger">
-        <span class="hamburger__bar"></span>
-    </div>
+    <article class="hamburger">
+        <div class="hamburger__wrapper">
+            <span class="hamburger__bar"></span>
+        </div>
+    </article>
     <!-- HAMBURGER MENU -->
-
     <!-- MOBILE LOGO -->
-    <a class="link nav__menu-links" href="../index.html" title="index.html"><img class="logo__bialokosz__mobile"
-            src="../assets/Backup_of_Logo Czarne.cd.svg" alt="Logo_Bialokosz"></a>
+    <article class="logo">
+        <div class="logo__wrapper">
+            <a class="navigation__menu-links" href="../index.html" title="index.html"><img
+                    class="logo__bialokosz__mobile" src="../assets/Backup_of_Logo Czarne.cd.svg"
+                    alt="Logo_Bialokosz"></a>
+        </div>
+    </article>
     <!-- MOBILE LOGO -->
-
     <!-- NAVIGATION -->
-    <nav class="nav">
-        <ul class="nav__menu-left">
-            <li class="mobile__hamburger-logo-container"><img src="../assets/Backup_of_Logo Czarne.cd.svg"
-                    alt="mobile-logo-palac-bialokosz" class="mobile__hamburger-logo"></li>
-            <a class="link nav__menu-links" href="../index.html" title="O nas">
-                <li class="nav__menu-li-element">o nas</li>
-            </a>
-            <a class="link nav__menu-links" href="noclegi.html" title="Noclegi">
-                <li class="nav__menu-li-element">noclegi</li>
-            </a>
-            <a class="link nav__menu-links" href="restauracja.html" title="Restauracja">
-                <li class="nav__menu-li-element">restauracja</li>
-            </a>
-        </ul>
-        <a class="link nav__menu-links" href="../index.html" title="index.html"><img class="logo__bialokosz"
-                src="../assets/Backup_of_Logo Czarne.cd.svg" alt="Logo_Bialokosz"></a>
-        <ul class="nav__menu-right">
-            <a class="link nav__menu-links" href="wesele.html" title="Wesele">
-                <li class="nav__menu-li-element">wesele</li>
-            </a>
-            <a class="link nav__menu-links" href="biznes.html" title="Biznes">
-                <li class="nav__menu-li-element">biznes</li>
-            </a>
-            <a class="link nav__menu-links" href="oferty_specjalne.html" title="Oferty specjalne">
-                <li class="nav__menu-li-element">oferty specjalne</li>
-            </a>
-            <a class="link nav__menu-links" href="kontakt.html" title="Kontakt">
-                <li class="nav__menu-li-element">kontakt</li>
-            </a>
-        </ul>
-    </nav>
+    <article class="navigation__container">
+        <div class="navigation__wrapper">
+            <nav class="navigation__menu">
+                <ul class="navigation__menu-left">
+                    <li class="hamburger__mobile-logo-container">
+                        <img src="../assets/Backup_of_Logo Czarne.cd.svg" alt="mobile-logo-palac-bialokosz"
+                            class="hamburger__mobile-logo">
+                    </li>
+                    <a class="navigation__menu-links" href="../index.html" title="O nas">
+                        <li class="navigation__menu-link">
+                            O nas
+                        </li>
+                    </a>
+                    <a class="navigation__menu-links" href="noclegi.html" title="Noclegi">
+                        <li class="navigation__menu-link">
+                            Noclegi
+                        </li>
+                    </a>
+                    <a class="navigation__menu-links" href="restauracja.html" title="Restauracja">
+                        <li class="navigation__menu-link">
+                            Restauracja
+                        </li>
+                    </a>
+                </ul>
+                <a class="navigation__menu-links" href="../index.html" title="index.html">
+                    <img class="logo__bialokosz" src="../assets/Backup_of_Logo Czarne.cd.svg" alt="Logo_Bialokosz">
+                </a>
+                <ul class="navigation__menu-right">
+                    <a class="navigation__menu-links" href="wesele.html" title="Wesele">
+                        <li class="navigation__menu-link">
+                            Wesele
+                        </li>
+                    </a>
+                    <a class="navigation__menu-links" href="biznes.html" title="Biznes">
+                        <li class="navigation__menu-link">
+                            Biznes
+                        </li>
+                    </a>
+                    <a class="navigation__menu-links" href="oferty_specjalne.html" title="Oferty specjalne">
+                        <li class="navigation__menu-link">
+                            Oferty specjalne
+                        </li>
+                    </a>
+                    <a class="navigation__menu-links" href="kontakt.html" title="Kontakt">
+                        <li class="navigation__menu-link">
+                            Kontakt
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </article>
     <!-- NAVIGATION -->
     <!-- CLOSE HAMBURGER BACKGROUND -->
     <article class="background__hamburger">
@@ -62,94 +87,136 @@
         </div>
     </article>
     <!-- CLOSE HAMBURGER BACKGROUND -->
-    <!-- CONTACT SECTION -->
-    <section class="invitation">
-        <div class="invitation__header">
-            <h1 class="invitation__header-text">
-                Skontaktuj się z nami
-            </h1>
+    <!-- WELCOME SECTION -->
+    <article class="welcome">
+        <div class="welcome__wrapper">
+            <img class="welcome__photo" src="../assets/photos/welcome-mobile.jpg" alt="Bialokosz-front">
         </div>
-    </section>
-    <section class="contact">
-        <div class="contact__details">
-            <div class="contact__details-party-header">
-                <h2 class="party-header">Organizacja imprez</h2>
+        <div class="scroll__button-wrapper">
+            <span class="scroll__button"></span>
+        </div>
+    </article>
+    <!-- WELCOME SECTION -->
+    <!-- CONTACT SECTION -->
+    <article class="description">
+        <div class="description__mobile-logo-wrapper">
+            <div class="description__mobile-logo-container">
+                <img id="logo__image-scroll" class="logo__image" src="../assets/Backup_of_Logo Czarne.cd.svg"
+                    alt="Logo Bialokosz">
             </div>
-            <div class="contact__details-party">
-                <div class="contact__details-first">
-                    <p class="contact__details-text">Krzysztof Witczak</p>
-                    <p class="contact__details-phone">
+        </div>
+        <div class="description__title-wrapper--big">
+            <h2 class="description__title">
+                Skontaktuj się z nami
+            </h2>
+        </div>
+    </article>
+    <article class="description">
+        <div class="description__paragraphs-wrapper">
+            <div class="description__title-wrapper">
+                <h3 class="description__title">
+                    Organizacja imprez
+                </h3>
+            </div>
+            <div class="contact__details-flex">
+                <div class="contact__details">
+                    <p class="description__text">
+                        Krzysztof Witczak
+                    </p>
+                    <p class="description__text">
+                        <a class="link" href="tel:+48000000000">
+                            +48-000-000-000
+                        </a>
+                    </p>
+                </div>
+                <div class="contact__details">
+                    <p class="description__text">Kinga Bestyńska</p>
+                    <p class="description__text">
                         <a class="link" href="tel:+48000000000">+48-000-000-000</a>
                     </p>
                 </div>
-                <div class="contact__details-second">
-                    <p class="contact__details-text">Kinga Bestyńska</p>
-                    <p class="contact__details-phone">
-                        <a class="link" href="tel:+48000000000">+48-000-000-000</a>
-                    </p>
-                </div>
             </div>
-            <div class="contact__details-booking-header">
-                <h2 class="booking-header">Recepcja/Rezerwacja noclegów</h2>
-            </div>
-            <div class="contact__details-booking">
-                <div class="contact__details-booking-text">
-                    <p class="contact__details-phone">Zadzwoń:
-                        <a class="link" href="tel:+48000000000">+48-000-000-000</a>
-                    </p>
-                    <p class="contact__details-email">Napisz do nas:
-                        <a class="link" href="mailto:sample@sample.com">sample@sample.com</a>
-                    </p>
-                </div>
-            </div>
-            <div class="contact__details-address-header">
-                <h2 class="address-header">Nasz adres</h2>
+        </div>
+    </article>
+    <article class="separator">
+        <div class="separator__wrapper">
+            <img src="../assets/separator.svg" alt="separator image" class="separator__image">
+        </div>
+    </article>
+    <article class="description">
+        <div class="description__title-wrapper">
+            <h3 class="description__title">
+                Recepcja/rezerwacja noclegów
+            </h3>
+        </div>
+        <div class="description__paragraphs-wrapper">
+            <p class="description__text--av">Zadzwoń:
+                <a class="link" href="tel:+48000000000">+48-000-000-000</a>
+            </p>
+            <p class="description__text--av">Napisz do nas:
+                <a class="link" href="mailto:sample@sample.com">sample@sample.com</a>
+            </p>
+        </div>
+    </article>
+    <article class="separator">
+        <div class="separator__wrapper">
+            <img src="../assets/separator.svg" alt="separator image" class="separator__image">
+        </div>
+    </article>
+    <article class="description">
+        <div class="description__paragraphs-wrapper">
+            <div class="description__title-wrapper">
+                <h3 class="description__title">
+                    Nasz adres
+                </h3>
             </div>
             <div class="contact__details-address">
                 <div class="contact__details-address-text">
                     <p class="contact__details-address-specific">Białokosz 13</p>
                     <p class="contact__details-address-specific">64-412 Chrzypsko Wielkie</p>
                 </div>
-                <div class="contact__details-address-map-wrap">
-                    <iframe class="contact__details-address-map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2424.841498150811!2d16.23626186625489!3d52.57247757142954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47042080ba0d1331%3A0x70210302cda17c0b!2sBia%C5%82okosz%2013%2C%2064-412%20Bia%C5%82okosz!5e0!3m2!1spl!2spl!4v1574540805168!5m2!1spl!2spl"
-                        frameborder="0" allowfullscreen=""></iframe>
-                </div>
-            </div>
-            <div class="contact__details-social-media">
-                <span class="social__media media__facebook">
-                    <a class="link__social" href="https://www.facebook.com/bialokosz/" target="_blank"
-                        title="facebook page">
-                        <img class="contact__details-social-media-icon" src="../assets/icons/facebook-icon.png"
-                            alt="facebook-icon">
-                    </a>
-                </span>
-                <span class="social__media media__instagram">
-                    <a class="link__social"
-                        href="https://www.instagram.com/palacbialokosz/?igshid=1q49tuq24s5no&fbclid=IwAR04rYLG2cU2zxNfcLNOH4xRzsb9zafZbHl1YRt0gZTne1ukst8aSkSByN4"
-                        target="_blank" title="instagram page">
-                        <img class="contact__details-social-media-icon" src="../assets/icons/instagram-icon.png"
-                            alt="instagram-icon">
-                    </a>
-                </span>
-                <span class="social__media media__tripadvisor">
-                    <a class="link__social"
-                        href="https://pl.tripadvisor.com/Restaurant_Review-g19107942-d6698356-Reviews-Palac_Bialokosz-Bialokosz_Greater_Poland_Province_Central_Poland.html"
-                        target="_blank">
-                        <img class="contact__details-social-media-icon" src="../assets/icons/tripadvisor-icon.png"
-                            alt="tripadvisor page">
-                    </a>
-                </span>
             </div>
         </div>
-    </section>
-    <footer class="footer">
-        <div class="footer__wrapper">
-            <p class="footer__text">Copyright&copy; 2019 <strong>Pałac Białokosz</strong> Website created by Piotr Nowak
-            </p>
+        <div class="contact__details-address-map-wrap">
+            <iframe class="contact__details-address-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2424.841498150811!2d16.23626186625489!3d52.57247757142954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47042080ba0d1331%3A0x70210302cda17c0b!2sBia%C5%82okosz%2013%2C%2064-412%20Bia%C5%82okosz!5e0!3m2!1spl!2spl!4v1574540805168!5m2!1spl!2spl"
+                frameborder="0" allowfullscreen=""></iframe>
         </div>
-    </footer>
-    <script src="../js/main.js"></script>
+        <div class="contact__details-social-media">
+            <span class="social__media media__facebook">
+                <a class="link__social" href="https://www.facebook.com/bialokosz/" target="_blank"
+                    title="facebook page">
+                    <img class="contact__details-social-media-icon" src="../assets/icons/facebook-icon.png"
+                        alt="facebook-icon">
+                </a>
+            </span>
+            <span class="social__media media__instagram">
+                <a class="link__social"
+                    href="https://www.instagram.com/palacbialokosz/?igshid=1q49tuq24s5no&fbclid=IwAR04rYLG2cU2zxNfcLNOH4xRzsb9zafZbHl1YRt0gZTne1ukst8aSkSByN4"
+                    target="_blank" title="instagram page">
+                    <img class="contact__details-social-media-icon" src="../assets/icons/instagram-icon.png"
+                        alt="instagram-icon">
+                </a>
+            </span>
+            <span class="social__media media__tripadvisor">
+                <a class="link__social"
+                    href="https://pl.tripadvisor.com/Restaurant_Review-g19107942-d6698356-Reviews-Palac_Bialokosz-Bialokosz_Greater_Poland_Province_Central_Poland.html"
+                    target="_blank">
+                    <img class="contact__details-social-media-icon" src="../assets/icons/tripadvisor-icon.png"
+                        alt="tripadvisor page">
+                </a>
+            </span>
+        </div>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <p class="footer__text">Copyright&copy; 2019 <strong>Pałac Białokosz</strong> Website created by Piotr
+                    Nowak
+                </p>
+            </div>
+        </footer>
+        <!-- FOOTER -->
+        <script src="../js/main.js"></script>
 </body>
 
 </html>
