@@ -1,5 +1,5 @@
 //HAMBURGER MENU
-const hamburger = document.querySelector('.hamburger__wrapper');
+const hamburger = document.querySelector('.hamburger');
 const hamburgerBar = document.querySelector('.hamburger__bar');
 const nav = document.querySelector('.navigation__menu');
 const closeHamburgerBackground = document.querySelector('.background');
