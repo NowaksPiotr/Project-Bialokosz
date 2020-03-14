@@ -52,9 +52,11 @@
                         </li>
                     </a>
                 </ul>
-                <a class="navigation__menu-links" href="index.html" title="index.html">
-                    <img class="logo__bialokosz" src="./assets/Backup_of_Logo Czarne.cd.svg" alt="Logo_Bialokosz">
-                </a>
+                <div class="logo__container">
+                    <a class="logo__link" href="index.html" title="index.html">
+                        <img class="logo__bialokosz" src="./assets/Backup_of_Logo Czarne.cd.svg" alt="Logo_Bialokosz">
+                    </a>
+                </div>
                 <ul class="navigation__menu-right">
                     <a class="navigation__menu-links" href="./sites/wesele.html" title="Wesele">
                         <li class="navigation__menu-link">
@@ -91,7 +93,11 @@
     <!-- WELCOME SECTION -->
     <article class="welcome">
         <div class="welcome__wrapper">
-            <img class="welcome__photo" src="./assets/photos/welcome-mobile.jpg" alt="Bialokosz-front">
+            <picture>
+                <source srcset="./assets/photos/welcome-mobile.jpg" media="(max-width: 768px)">
+                <source srcset="./assets/photos/2.jpg" media="(min-width: 769px)">
+                <img class="welcome__photo" src="./assets/photos/welcome-mobile.jpg" alt="Bialokosz-front">
+            </picture>
         </div>
         <div class="scroll__button-wrapper">
             <span class="scroll__button"></span>

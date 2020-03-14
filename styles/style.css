@@ -3,32 +3,9 @@ body {
     color: rgb(80, 80, 80);
     background-color: rgb(248, 242, 242);
 }
-
-.logo__bialokosz {
-    width: 40%;
-    position: absolute;
-    top: -1em;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.logo__bialokosz__mobile {
-    display: none;
-}
-
-.link {
-    text-decoration: underline;
-    color: inherit;
-    cursor: pointer;
-}
-
-.mobile__hamburger-logo {
-    display: none;
-}
-
 /********** MEDIA QUERIES FOR DEVICE MAX-WIDTH: 480px ****************/
 
-@media(max-width: 480px) {
+@media(max-width: 480px){
     html, body {
         margin: 0;
         padding: 0;
@@ -388,7 +365,7 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        max-width: 390px;
+        max-width: 100vw;
         max-height: 15em;
         /* border-radius: 10% 0 10% 0; */
         animation: showUp 1s ease-in;
@@ -531,8 +508,8 @@ body {
     }
     /*********************** HAMBURGER MENU ***********************/
     .hamburger {
-        width: 40px;
-        height: 60px;
+        width: 20px;
+        height: 30px;
         top: 20px;
         left: 20px;
         position: fixed;
@@ -542,7 +519,7 @@ body {
     .hamburger__bar {
         position: absolute;
         top: 18px;
-        height: 6px;
+        height: 3px;
         width: 40px;
         background-color: black;
         content: '';
@@ -550,8 +527,8 @@ body {
     }
     .hamburger__bar::before {
         position: absolute;
-        top: -12px;
-        height: 6px;
+        top: -9px;
+        height: 3px;
         width: 40px;
         background-color: black;
         content: '';
@@ -559,8 +536,8 @@ body {
     }
     .hamburger__bar::after {
         position: absolute;
-        top: 12px;
-        height: 6px;
+        top: 9px;
+        height: 3px;
         width: 40px;
         background-color: black;
         content: '';
@@ -571,10 +548,10 @@ body {
         background-color: transparent;
     }
     .hamburger__bar--active::before {
-        transform: rotateZ(45deg) scaleX(1.25) translate(6px, 8px);
+        transform: rotateZ(45deg) scaleX(1.25) translate(4px, 6px);
     }
     .hamburger__bar--active::after {
-        transform: rotateZ(-45deg) scaleX(1.25) translate(6px, -10px);
+        transform: rotateZ(-45deg) scaleX(1.25) translate(4px, -8px);
     }
     .navigation__menu {
         position: fixed;
@@ -585,7 +562,7 @@ body {
         background-color: lightgray;
         /*** Default color will be diffrent ***/
         width: 75vw;
-        height: 100%;
+        height: 100vh;
         transition-duration: .8s;
         left: -100vw;
         z-index: 999;
@@ -886,6 +863,427 @@ body {
         width: 100%;
         /* max-width: 390px; */
         max-height: 30em;
+        /* border-radius: 10% 0 10% 0; */
+        animation: showUp 1s ease-in;
+    }
+    @keyframes showUp {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    /******************** GALLERY SLIDER ********************/
+    /*************** COMMON BLOCK AND ELEMENTS **************/
+    .service__icon-wrapper {
+        margin-right: .8em;
+    }
+    .service__icon {
+        height: 1em;
+    }
+    .div__description-paragraphs-wrapper {
+        width: 90vw;
+        margin: 2em 1em 2em 1em;
+    }
+    .span__bold {
+        font-weight: bold;
+    }
+    .contact__number {
+        display: block;
+        margin: 1em 0 1em 0;
+        text-align: center;
+    }
+    /******************** CONTACT SECTION  ******************/
+    .invitation {
+        position: relative;
+        top: 5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact {
+        position: relative;
+        top: 3.5em;
+    }
+    .contact__details-party {
+        display: flex;
+        justify-content: space-around;
+    }
+    .contact__details-party-header, .contact__details-booking-header, .contact__details-address-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2em 0 0 0;
+    }
+    .contact__details-booking-text, .contact__details-address-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact__details-address-specific, .contact__details-text, .contact__details-phone, .contact__details-email {
+        margin: 0.2em;
+        text-align: center;
+        width: 100%;
+    }
+    .contact__details-address-map-wrap {
+        margin: 0;
+    }
+    .contact__details-address-map {
+        position: relative;
+        height: 15em;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    .contact__details-social-media, .social__media, .contact__details-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .social__media {
+        margin: 1em 0 0 0;
+    }
+    .contact__details-social-media-icon {
+        height: 20%;
+        width: 20%;
+        margin: 0;
+        padding: 0;
+    }
+    .footer {
+        width: 100vw;
+        position: relative;
+        margin-top: 2em;
+        font-size: .8em;
+    }
+    .footer__wrapper {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer__text {
+        padding-top: 1em;
+        font-size: .7em;
+    }
+    .services__wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 2em 0;
+    }
+    .services__wrapper--special{
+        max-height: 300em;
+        transition: max-height .8s ease-in;
+    }
+    .dropdown__button-icon {
+        width: 1em;
+        transition: .5s;
+    }
+    .dropdown__button-icon--rotate{
+        transform: rotate(180deg);
+        transition: .5s
+    }
+    .dropdown__list-hidden, .dropdown__ul-elements{
+        max-height: 0;
+        transition: max-height 1s ease-out;
+        overflow: hidden;
+    }
+    .contact__details-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(min-width: 789px){
+    html, body {
+        margin: 0;
+        padding: 0;
+        z-index: -999;
+    }
+    .hamburger__mobile-logo-container{
+        display: none;
+    }
+    .navigation__menu{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .navigation__menu-link{
+        display: inline;
+        margin: 0 1em 0 1em;
+    }
+    .logo__container{
+        position: absolute;
+        top: 1em;
+        left: 50%;
+        transform: translate(-50%);
+        width: 40vw;
+        display: flex;
+        justify-content: center;
+    }
+    .logo__link{
+        display: flex;
+        justify-content: center;
+    }
+    .navigation__container{
+        width: 100vw;
+        background-color: silver;
+    }
+    /*********************** HAMBURGER MENU ***********************/
+    /***********************  WELCOME PHOTO ***********************/
+    .welcome {
+        height: 100vh;
+        position: relative;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .welcome__wrapper {
+        position: relative;
+        top: -1.5em;
+        margin: 0;
+        padding: 0;
+    }
+    .welcome__photo {
+        height: 100%;
+        width: 100%;
+        max-width: 390px;
+    }
+    /******************** WELCOME PHOTO *********************/
+    /*******************  SCROLL BUTTON *********************/
+    .scroll__button-wrapper, .scroll__button-link {
+        height: 4em;
+        width: 4em;
+        position: absolute;
+        left: 50%;
+        bottom: 3em;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+    .scroll__button {
+        height: 2em;
+        width: 2em;
+        border-top: none;
+        border-left: none;
+        border-bottom: 4px solid white;
+        border-right: 4px solid white;
+        transform: rotate(45deg);
+        animation: scrollAnimation 2500ms ease infinite;
+        opacity: 0;
+    }
+    @keyframes scrollAnimation {
+        0% {
+            opacity: 0;
+            transform: translateY(-6em) rotate(45deg);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0em) rotate(45deg);
+        }
+    }
+    /***********************  SCROLL BUTTON ***********************/
+    /***********************      LOGO      ***********************/
+    .logo {
+        z-index: 10;
+    }
+    .logo__bialokosz {
+        display: block;
+        width: 25%;
+    }
+    .logo__bialokosz__mobile {
+        display: none;
+        width: 45%;
+        position: absolute;
+        top: .2em;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 10;
+    }
+    /***********************      LOGO      ***********************/
+    /***********************   SEPARATOR    ***********************/
+    .separator {
+        width: 100vw;
+        margin: 2em 0 2em 0;
+    }
+    .separator__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .separator__image {
+        width: 100%;
+        height: 1.5em;
+    }
+    /***********************   SEPARATOR    ***********************/
+    /******************* DESCRIPTION SECTION **********************/
+    .description, .description__title-wrapper {
+        width: 100vw;
+    }
+    .description__mobile-logo-wrapper {
+        position: relative;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .logo__image {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 45%;
+    }
+    .description__title-wrapper, .description__title {
+        margin: 0;
+        padding: 0;
+    }
+    .description__title-wrapper--big {
+        margin-bottom: 4em;
+    }
+    .description__title-wrapper {
+        margin-bottom: 2em;
+    }
+    .description__title {
+        text-align: center;
+    }
+    .description__paragraphs-wrapper {
+        padding: 1em 0 1em 0;
+        background-color: rgb(255, 255, 255);
+        /* border-radius: 20% 0 20% 0; */
+        margin: 3em 0 3em 0;
+    }
+    .description__text {
+        margin: 2em 1em 2em 1em;
+        text-align: left;
+    }
+    .description__text--offer {
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .description__text--special {
+        margin: 1em 1em 0 1em;
+    }
+    .description__text--av, .desctiption__text--focus, .description__text--asteriks, .description__text--end {
+        text-align: center;
+    }
+    .offer {
+        position: relative;
+        top: 2em;
+        width: 100vw;
+    }
+    .room__description-wrapper {
+        width: 90vw;
+        margin: 1em 1em 2em 1em;
+        text-align: center;
+    }
+    .room__type {
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .room__price {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    .service__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+    .service__list--special {
+        list-style: circle;
+
+    }
+    .service__text--special {
+        margin: 0 0 .5em 0;
+    }
+    .service__list-terms--main {
+        list-style: upper-roman;
+    }
+    .service__list-dropdown {
+        list-style: lower-alpha;
+    }
+    /******************* DESCRIPTION SECTION **********************/
+    /******************* DROPDOWN BUTTON **************************/
+    .dropdown__button-wrapper {
+        position: absolute;
+        right: 2em;
+        margin: 0 0 0 1.5em;
+    }
+    .service__list-terms--inner{
+        max-height: 0;
+        transition: max-height .5s ease-out;
+        overflow: hidden;
+    }
+    .service__list-terms--inner-active{
+        max-height: 1000px;
+        transition: max-height 1s .2s ease-in;
+    }
+    /******************* DROPDOWN BUTTON **************************/
+    /******************** GALLERY SLIDER **************************/
+    .gallery {
+        height: 15em;
+        width: 100vw;
+    }
+    .gallery__slider-button-previous-wrapper, .gallery__slider-button-next-wrapper {
+        position: absolute;
+        z-index: 1;
+        width: 3em;
+        height: 15em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gallery__slider-button-previous-wrapper {
+        left: 0.5em;
+    }
+    .gallery__slider-button-next-wrapper {
+        right: 0.5em;
+    }
+    .gallery__button-previous {
+        width: 1.5em;
+        height: 1.4em;
+        transform: rotate(45deg);
+        border-bottom: 3px solid rgb(255, 255, 255);
+        border-left: 3px solid rgb(255, 255, 255);
+        opacity: .5;
+    }
+    .gallery__button-next {
+        width: 1.5em;
+        height: 1.4em;
+        transform: rotate(45deg);
+        border-top: 3px solid rgb(255, 255, 255);
+        border-right: 3px solid rgb(255, 255, 255);
+        opacity: .5;
+    }
+    .gallery__button-previous:hover, .gallery__button-next:hover {
+        opacity: 1;
+    }
+    .photos__wrapper {
+        height: 15em;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .slide__photos-bialokosz, .img__photo {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100vw;
+        max-height: 15em;
         /* border-radius: 10% 0 10% 0; */
         animation: showUp 1s ease-in;
     }
