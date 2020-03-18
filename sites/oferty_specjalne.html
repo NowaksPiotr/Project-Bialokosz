@@ -17,6 +17,7 @@
         </div>
     </article>
     <!-- HAMBURGER MENU -->
+
     <!-- MOBILE LOGO -->
     <article class="logo">
         <div class="logo__wrapper">
@@ -26,11 +27,12 @@
         </div>
     </article>
     <!-- MOBILE LOGO -->
+
     <!-- NAVIGATION -->
     <article class="navigation__container">
         <div class="navigation__wrapper">
             <nav class="navigation__menu">
-                <ul class="navigation__menu-left">
+                <ul class="navigation__menu-list">
                     <li class="hamburger__mobile-logo-container">
                         <img src="../assets/Backup_of_Logo Czarne.cd.svg" alt="mobile-logo-palac-bialokosz"
                             class="hamburger__mobile-logo">
@@ -50,11 +52,6 @@
                             Restauracja
                         </li>
                     </a>
-                </ul>
-                <a class="navigation__menu-links" href="../index.html" title="index.html">
-                    <img class="logo__bialokosz" src="../assets/Backup_of_Logo Czarne.cd.svg" alt="Logo_Bialokosz">
-                </a>
-                <ul class="navigation__menu-right">
                     <a class="navigation__menu-links" href="wesele.html" title="Wesele">
                         <li class="navigation__menu-link">
                             Wesele
@@ -78,6 +75,11 @@
                 </ul>
             </nav>
         </div>
+        <div class="logo__container">
+            <a class="logo__link" href="../index.html" title="index.html">
+                <img class="logo__bialokosz" src="../assets/Backup_of_Logo Czarne.cd.svg" alt="Logo_Bialokosz">
+            </a>
+        </div>
     </article>
     <!-- NAVIGATION -->
     <!-- CLOSE HAMBURGER BACKGROUND -->
@@ -90,7 +92,11 @@
     <!-- WELCOME SECTION -->
     <article class="welcome">
         <div class="welcome__wrapper">
-            <img class="welcome__photo" src="../assets/photos/welcome-mobile.jpg" alt="Bialokosz-front">
+            <picture class="welcome__photo">
+                <source srcset="../assets/photos/welcome-mobile.jpg" media="(max-width: 768px)">
+                <source srcset="../assets/photos/2.jpg" media="(min-width: 769px)">
+                <img class="welcome__photo" src="./assets/photos/welcome-mobile.jpg" alt="Bialokosz-front">
+            </picture>
         </div>
         <div class="scroll__button-wrapper">
             <span class="scroll__button"></span>
@@ -99,12 +105,12 @@
     <!-- WELCOME SECTION -->
     <!-- OFFER KOMUNIE -->
     <article class="description">
-    <div class="description__mobile-logo-wrapper">
-        <div class="description__mobile-logo-container">
-            <img id="logo__image-scroll" class="logo__image" src="../assets/Backup_of_Logo Czarne.cd.svg"
-                alt="Logo Bialokosz">
+        <div class="description__mobile-logo-wrapper">
+            <div class="description__mobile-logo-container">
+                <img id="logo__image-scroll" class="logo__image" src="../assets/Backup_of_Logo Czarne.cd.svg"
+                    alt="Logo Bialokosz">
+            </div>
         </div>
-    </div>
         <div class="description__title-wrapper--big">
             <h2 class="description__title">
                 Stylowo & Wygodnie
@@ -254,11 +260,9 @@
             </h2>
         </div>
         <div class="description__paragraphs-wrapper">
-            <div class="description__title-wrapper">
-                <h3 class="description__title">
-                    Pobyt w Pałacu Białokosz
-                </h3>
-            </div>
+            <p class="description__text--av">
+                <span class="span__bold">Pobyt w Pałacu Białokosz</span>
+            </p>
             <p class="description__text">
                 Otrzymujesz:
             </p>
@@ -277,11 +281,9 @@
             </p>
         </div>
         <div class="description__paragraphs-wrapper">
-            <div class="description__title-wrapper">
-                <h3 class="description__title">
-                    Kolacja we dwoje
-                </h3>
-            </div>
+            <p class="description__text--av">
+                <span class="span__bold">Kolacja we dwoje</span>
+            </p>
             <div class="description__text-wrapper">
                 <p class="description__text">
                     Otrzymujesz:

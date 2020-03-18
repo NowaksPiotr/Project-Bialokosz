@@ -17,20 +17,21 @@
         </div>
     </article>
     <!-- HAMBURGER MENU -->
+
     <!-- MOBILE LOGO -->
     <article class="logo">
         <div class="logo__wrapper">
-            <a class="navigation__menu-links" href="../index.html" title="index.html"><img
-                    class="logo__bialokosz__mobile" src="../assets/Backup_of_Logo Czarne.cd.svg"
-                    alt="Logo_Bialokosz"></a>
+            <a class="navigation__menu-links" href="../index.html" title="index.html"><img class="logo__bialokosz__mobile"
+                    src="../assets/Backup_of_Logo Czarne.cd.svg" alt="Logo_Bialokosz"></a>
         </div>
     </article>
     <!-- MOBILE LOGO -->
+
     <!-- NAVIGATION -->
     <article class="navigation__container">
         <div class="navigation__wrapper">
             <nav class="navigation__menu">
-                <ul class="navigation__menu-left">
+                <ul class="navigation__menu-list">
                     <li class="hamburger__mobile-logo-container">
                         <img src="../assets/Backup_of_Logo Czarne.cd.svg" alt="mobile-logo-palac-bialokosz"
                             class="hamburger__mobile-logo">
@@ -49,12 +50,7 @@
                         <li class="navigation__menu-link">
                             Restauracja
                         </li>
-                    </a>
-                </ul>
-                <a class="navigation__menu-links" href="../index.html" title="index.html">
-                    <img class="logo__bialokosz" src="../assets/Backup_of_Logo Czarne.cd.svg" alt="Logo_Bialokosz">
-                </a>
-                <ul class="navigation__menu-right">
+                    </a>     
                     <a class="navigation__menu-links" href="wesele.html" title="Wesele">
                         <li class="navigation__menu-link">
                             Wesele
@@ -78,6 +74,11 @@
                 </ul>
             </nav>
         </div>
+        <div class="logo__container">
+            <a class="logo__link" href="../index.html" title="index.html">
+                <img class="logo__bialokosz" src="../assets/Backup_of_Logo Czarne.cd.svg" alt="Logo_Bialokosz">
+            </a>
+        </div>
     </article>
     <!-- NAVIGATION -->
     <!-- CLOSE HAMBURGER BACKGROUND -->
@@ -90,7 +91,11 @@
     <!-- WELCOME SECTION -->
     <article class="welcome">
         <div class="welcome__wrapper">
-            <img class="welcome__photo" src="../assets/photos/welcome-mobile.jpg" alt="Bialokosz-front">
+            <picture class="welcome__photo">
+                <source srcset="../assets/photos/welcome-mobile.jpg" media="(max-width: 768px)">
+                <source srcset="../assets/photos/2.jpg" media="(min-width: 769px)">
+                <img class="welcome__photo" src="./assets/photos/welcome-mobile.jpg" alt="Bialokosz-front">
+            </picture>
         </div>
         <div class="scroll__button-wrapper">
             <span class="scroll__button"></span>
