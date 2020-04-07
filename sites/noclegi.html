@@ -21,14 +21,20 @@
     <!-- MOBILE LOGO -->
     <article class="logo">
         <div class="logo__wrapper">
-            <a class="navigation__menu-links" href="../index.html" title="index.html"><img class="logo__bialokosz__mobile"
-                    src="../assets/Backup_of_Logo Czarne.cd.svg" alt="Logo_Bialokosz"></a>
+            <a class="navigation__menu-links" href="../index.html" title="index.html"><img
+                    class="logo__bialokosz__mobile" src="../assets/Backup_of_Logo Czarne.cd.svg"
+                    alt="Logo_Bialokosz"></a>
         </div>
     </article>
     <!-- MOBILE LOGO -->
 
     <!-- NAVIGATION -->
     <article class="navigation__container">
+        <div class="logo__container">
+            <a class="logo__link" href="index.html" title="index.html">
+                <img class="logo__bialokosz" src="../assets/Backup_of_Logo Czarne.cd.svg" alt="Logo_Bialokosz">
+            </a>
+        </div>
         <div class="navigation__wrapper">
             <nav class="navigation__menu">
                 <ul class="navigation__menu-list">
@@ -41,43 +47,38 @@
                             O nas
                         </li>
                     </a>
-                    <a class="navigation__menu-links" href="noclegi.html" title="Noclegi">
+                    <a class="navigation__menu-links" href="./noclegi.html" title="Noclegi">
                         <li class="navigation__menu-link">
                             Noclegi
                         </li>
                     </a>
-                    <a class="navigation__menu-links" href="restauracja.html" title="Restauracja">
+                    <a class="navigation__menu-links" href="./restauracja.html" title="Restauracja">
                         <li class="navigation__menu-link">
                             Restauracja
                         </li>
-                    </a>     
-                    <a class="navigation__menu-links" href="wesele.html" title="Wesele">
+                    </a>
+                    <a class="navigation__menu-links" href="./wesele.html" title="Wesele">
                         <li class="navigation__menu-link">
                             Wesele
                         </li>
                     </a>
-                    <a class="navigation__menu-links" href="biznes.html" title="Biznes">
+                    <a class="navigation__menu-links" href="./biznes.html" title="Biznes">
                         <li class="navigation__menu-link">
                             Biznes
                         </li>
                     </a>
-                    <a class="navigation__menu-links" href="oferty_specjalne.html" title="Oferty specjalne">
+                    <a class="navigation__menu-links" href="./oferty_specjalne.html" title="Oferty specjalne">
                         <li class="navigation__menu-link">
                             Oferty specjalne
                         </li>
                     </a>
-                    <a class="navigation__menu-links" href="kontakt.html" title="Kontakt">
+                    <a class="navigation__menu-links" href="./kontakt.html" title="Kontakt">
                         <li class="navigation__menu-link">
                             Kontakt
                         </li>
                     </a>
                 </ul>
             </nav>
-        </div>
-        <div class="logo__container">
-            <a class="logo__link" href="../index.html" title="index.html">
-                <img class="logo__bialokosz" src="../assets/Backup_of_Logo Czarne.cd.svg" alt="Logo_Bialokosz">
-            </a>
         </div>
     </article>
     <!-- NAVIGATION -->
@@ -92,8 +93,8 @@
     <article class="welcome">
         <div class="welcome__wrapper">
             <picture class="welcome__photo">
-                <source srcset="../assets/photos/welcome-mobile.jpg" media="(max-width: 768px)">
-                <source srcset="../assets/photos/2.jpg" media="(min-width: 769px)">
+                <source srcset="../assets/photos/welcome-mobile.jpg" media="(max-width: 1024px)">
+                <source srcset="../assets/photos/2.jpg" media="(min-width: 1025px)">
                 <img class="welcome__photo" src="./assets/photos/welcome-mobile.jpg" alt="Bialokosz-front">
             </picture>
         </div>
@@ -110,7 +111,7 @@
                     alt="Logo Bialokosz">
             </div>
         </div>
-        <div class="description__title-wrapper--big">
+        <div class="description__title-wrapper">
             <h2 class="description__title">
                 Stylowo & Wygodnie
             </h2>
@@ -180,28 +181,29 @@
                 </div>
             </div>
         </div>
-    </article>
-    <article class="separator">
-        <div class="separator__wrapper">
-            <img src="../assets/separator.svg" alt="separator image" class="separator__image">
-        </div>
+        <article class="separator">
+            <div class="separator__wrapper">
+                <img src="../assets/separator.svg" alt="separator image" class="separator__image">
+            </div>
+        </article>
     </article>
     <!-- DESCRIPTION SECTION-->
     <!-- OFFER SECTION-->
     <article class="offer">
-        <div class="description__title-wrapper--big">
-            <h2 class="description__title">
-                Pokoje i apartamenty
-            </h2>
-        </div>
         <div class="offer__wrapper">
-            <article class="offer__product"> <!-- POKÓJ JEDNOOSOBOWY -->
+            <div class="description__title-wrapper--big">
+                <h2 class="description__title">
+                    Pokoje i apartamenty
+                </h2>
+            </div>
+            <article class="offer__product">
+                <!-- POKÓJ JEDNOOSOBOWY -->
                 <p class="description__text--offer">
                     <span class="room__type">
                         Pokój jednoosobowy
                     </span>
                 </p>
-                <div class="gallery">
+                <div class="gallery__noclegi">
                     <div class="gallery__wrapper">
                         <div class="gallery__slider-buttons">
                             <div class="gallery__slider-button-previous-wrapper">
@@ -212,7 +214,7 @@
                             </div>
                         </div>
                         <div class="photos__wrapper">
-                            <img class="slide__photos-bialokosz slide__photos-bialokosz--active"
+                            <img class="slide__photos-bialokosz--noclegi slide__photos-bialokosz--active"
                                 src="../assets/photos/room1.JPG" alt="Picture of room">
                         </div>
                     </div>
@@ -268,13 +270,14 @@
                     <img src="../assets/separator.svg" alt="separator image" class="separator__image">
                 </div>
             </article>
-            <article class="offer__product"> <!-- POKÓJ DWUOSOBOWY -->
+            <article class="offer__product">
+                <!-- POKÓJ DWUOSOBOWY -->
                 <p class="description__text--offer">
                     <span class="room__type">
                         Pokój dwuosobowy
                     </span>
                 </p>
-                <div class="gallery">
+                <div class="gallery__noclegi">
                     <div class="gallery__wrapper">
                         <div class="gallery__slider-buttons">
                             <div class="gallery__slider-button-previous-wrapper">
@@ -285,7 +288,7 @@
                             </div>
                         </div>
                         <div class="photos__wrapper">
-                            <img class="slide__photos-bialokosz slide__photos-bialokosz--active"
+                            <img class="slide__photos-bialokosz--noclegi slide__photos-bialokosz--active"
                                 src="../assets/photos/room1.JPG" alt="Picture of room">
                         </div>
                     </div>
@@ -299,8 +302,7 @@
                             <ul class="service__list">
                                 <li class="service__text">
                                     <span class="service__icon-wrapper">
-                                        <img class="service__icon" src="../assets/icons/food-icon.png"
-                                            alt="Food icon">
+                                        <img class="service__icon" src="../assets/icons/food-icon.png" alt="Food icon">
                                     </span>
                                     <span class="service__name">
                                         Śniadanie w cenie
@@ -340,13 +342,14 @@
                     <img src="../assets/separator.svg" alt="separator image" class="separator__image">
                 </div>
             </article>
-            <article class="offer__product"> <!-- APARTAMENT Z TARASEM -->
+            <article class="offer__product">
+                <!-- APARTAMENT Z TARASEM -->
                 <p class="description__text--offer">
                     <span class="room__type">
                         Apartament z tarasem i widokiem na jezioro
                     </span>
                 </p>
-                <div class="gallery">
+                <div class="gallery__noclegi">
                     <div class="gallery__wrapper">
                         <div class="gallery__slider-buttons">
                             <div class="gallery__slider-button-previous-wrapper">
@@ -357,7 +360,7 @@
                             </div>
                         </div>
                         <div class="photos__wrapper">
-                            <img class="slide__photos-bialokosz slide__photos-bialokosz--active"
+                            <img class="slide__photos-bialokosz--noclegi slide__photos-bialokosz--active"
                                 src="../assets/photos/room1.JPG" alt="Picture of room">
                         </div>
                     </div>
@@ -373,8 +376,7 @@
                             <ul class="service__list">
                                 <li class="service__text">
                                     <span class="service__icon-wrapper">
-                                        <img class="service__icon" src="../assets/icons/food-icon.png"
-                                            alt="Food icon">
+                                        <img class="service__icon" src="../assets/icons/food-icon.png" alt="Food icon">
                                     </span>
                                     <span class="service__name">
                                         Śniadanie w cenie
@@ -418,13 +420,14 @@
                     <img src="../assets/separator.svg" alt="separator image" class="separator__image">
                 </div>
             </article>
-            <article class="offer__product"> <!-- STUDIO DWUPOKOJOWE -->
+            <article class="offer__product">
+                <!-- STUDIO DWUPOKOJOWE -->
                 <p class="description__text--offer">
                     <span class="room__type">
                         Studio dwupokojowe
                     </span>
                 </p>
-                <div class="gallery">
+                <div class="gallery__noclegi">
                     <div class="gallery__wrapper">
                         <div class="gallery__slider-buttons">
                             <div class="gallery__slider-button-previous-wrapper">
@@ -435,7 +438,7 @@
                             </div>
                         </div>
                         <div class="photos__wrapper">
-                            <img class="slide__photos-bialokosz slide__photos-bialokosz--active"
+                            <img class="slide__photos-bialokosz--noclegi slide__photos-bialokosz--active"
                                 src="../assets/photos/room1.JPG" alt="Picture of room">
                         </div>
                     </div>
@@ -451,8 +454,7 @@
                             <ul class="service__list">
                                 <li class="service__text">
                                     <span class="service__icon-wrapper">
-                                        <img class="service__icon" src="../assets/icons/food-icon.png"
-                                            alt="Food icon">
+                                        <img class="service__icon" src="../assets/icons/food-icon.png" alt="Food icon">
                                     </span>
                                     <span class="service__name">
                                         Śniadanie w cenie
@@ -495,13 +497,14 @@
                     <img src="../assets/separator.svg" alt="separator image" class="separator__image">
                 </div>
             </article>
-            <article class="offer__product"> <!-- POKOJE WIELOOSOBOWE -->
+            <article class="offer__product">
+                <!-- POKOJE WIELOOSOBOWE -->
                 <p class="description__text--offer">
                     <span class="room__type">
                         Pokoje wieloosobowe
                     </span>
                 </p>
-                <div class="gallery">
+                <div class="gallery__noclegi">
                     <div class="gallery__wrapper">
                         <div class="gallery__slider-buttons">
                             <div class="gallery__slider-button-previous-wrapper">
@@ -512,7 +515,7 @@
                             </div>
                         </div>
                         <div class="photos__wrapper">
-                            <img class="slide__photos-bialokosz slide__photos-bialokosz--active"
+                            <img class="slide__photos-bialokosz--noclegi slide__photos-bialokosz--active"
                                 src="../assets/photos/room1.JPG" alt="Picture of room">
                         </div>
                     </div>
@@ -528,8 +531,7 @@
                             <ul class="service__list">
                                 <li class="service__text">
                                     <span class="service__icon-wrapper">
-                                        <img class="service__icon" src="../assets/icons/food-icon.png"
-                                            alt="Food icon">
+                                        <img class="service__icon" src="../assets/icons/food-icon.png" alt="Food icon">
                                     </span>
                                     <span class="service__name">
                                         Śniadanie w cenie

@@ -311,7 +311,7 @@ body {
     }
     /******************* DROPDOWN BUTTON **************************/
     /******************** GALLERY SLIDER **************************/
-    .gallery {
+    .gallery, .gallery__noclegi {
         height: 15em;
         width: 100vw;
     }
@@ -356,7 +356,7 @@ body {
         justify-content: center;
         align-items: center;
     }
-    .slide__photos-bialokosz, .img__photo {
+    .slide__photos-bialokosz, .slide__photos-bialokosz--noclegi, .img__photo {
         position: relative;
         top: 0;
         left: 0;
@@ -804,7 +804,7 @@ body {
     }
     /******************* DROPDOWN BUTTON **************************/
     /******************** GALLERY SLIDER **************************/
-    .gallery {
+    .gallery, .gallery__noclegi {
         height: 30em;
         width: 100vw;
     }
@@ -849,7 +849,7 @@ body {
         justify-content: center;
         align-items: center;
     }
-    .slide__photos-bialokosz, .img__photo {
+    .slide__photos-bialokosz, .slide__photos-bialokosz--noclegi, .img__photo {
         position: relative;
         top: 0;
         left: 0;
@@ -1133,7 +1133,7 @@ body {
     .description {
         width: 100vw;
         box-sizing: border-box;
-        padding: 0 10% 0 9%;
+        padding: 0 10% 0 10%;
     }
     .description__title-wrapper{
         width: 100%;
@@ -1157,6 +1157,7 @@ body {
     }
     .description__title-wrapper--big {
         margin-bottom: 4em;
+        grid-column: 1/3;
     }
     .description__title-wrapper {
         margin-bottom: 2em;
@@ -1184,6 +1185,7 @@ body {
     .description__text--offer {
         text-align: center;
         font-size: 1.3em;
+        grid-column: 1/3;
     }
     .description__text--special {
         margin: 1em 1em 0 1em;
@@ -1195,13 +1197,12 @@ body {
         grid-column: 1/3;
     }
     .offer {
-        position: relative;
-        top: 2em;
         width: 100vw;
+        box-sizing: border-box;
+        padding: 0 10% 0 10%;
     }
     .room__description-wrapper {
-        width: 90vw;
-        margin: 1em 1em 2em 1em;
+        width: 100%;
         text-align: center;
     }
     .room__type {
@@ -1253,7 +1254,7 @@ body {
     }
     /******************* DROPDOWN BUTTON **************************/
     /******************** GALLERY SLIDER **************************/
-    .gallery {
+    .gallery, .gallery__noclegi {
         height: 100%;
         width: 100%;
     }
@@ -1303,7 +1304,7 @@ body {
         justify-content: center;
         align-items: center;
     }
-    .slide__photos-bialokosz, .img__photo {
+    .slide__photos-bialokosz, .slide__photos-bialokosz--noclegi, .img__photo {
         position: relative;
         top: 0;
         left: 0;
@@ -1312,6 +1313,9 @@ body {
         max-height: 45em;
         /* border-radius: 10% 0 10% 0; */
         animation: showUp 1s ease-in;
+    }
+    .slide__photos-bialokosz--noclegi{
+        width: 75%;
     }
     @keyframes showUp {
         0% {
@@ -1379,8 +1383,8 @@ body {
     }
     .contact__details-address-map {
         position: relative;
-        height: 15em;
-        width: 100vw;
+        height: 35em;
+        width: 100%;
         margin: 0;
         padding: 0;
     }
@@ -1394,10 +1398,10 @@ body {
         margin: 1em 0 0 0;
     }
     .contact__details-social-media-icon {
-        height: 20%;
-        width: 20%;
+        height: 2em;
+        width: 2em;
         margin: 0;
-        padding: 0;
+        padding: 1em;
     }
     .footer {
         box-sizing: border-box;
@@ -1411,6 +1415,7 @@ body {
         display: flex;
         justify-content: center;
         text-align: center;
+        width: 100%;
     }
     .footer__text {
         padding-top: 1em;
