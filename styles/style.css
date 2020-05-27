@@ -1313,7 +1313,7 @@ body {
     }
     .description__text {
         margin: 2em 1em 2em 1em;
-        text-align: left;
+        text-align: center;
     }
     .description__text--offer {
         text-align: center;
@@ -1537,7 +1537,7 @@ body {
         width: 100vw;
         position: relative;
         margin-top: 2em;
-        font-size: .8em;
+        font-size: 1em;
     }
     .footer__wrapper {
         display: flex;
