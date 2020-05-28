@@ -334,17 +334,6 @@ body {
         text-align: center;
     }
     /******************** CONTACT SECTION  ******************/
-    .invitation {
-        position: relative;
-        top: 5em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .contact {
-        position: relative;
-        top: 3.5em;
-    }
     .contact__details-party {
         display: flex;
         justify-content: space-around;
@@ -391,21 +380,6 @@ body {
         margin: 0;
         padding: 0;
     }
-    .footer {
-        width: 100vw;
-        position: relative;
-        margin-top: 2em;
-        font-size: .8em;
-    }
-    .footer__wrapper {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-    .footer__text {
-        padding-top: 1em;
-        font-size: .7em;
-    }
     .services__wrapper {
         display: flex;
         justify-content: center;
@@ -433,6 +407,23 @@ body {
         justify-content: center;
         align-items: center;
     }
+    /****************  FOOTER *********************/
+    .footer {
+        width: 100vw;
+        position: relative;
+        margin-top: 2em;
+        font-size: .8em;
+    }
+    .footer__wrapper {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer__text {
+        padding-top: 1em;
+        font-size: .7em;
+    }
+    /****************  FOOTER *********************/
 }
 
 @media(min-width: 481px) and (max-width: 768px) {
@@ -763,17 +754,6 @@ body {
         text-align: center;
     }
     /******************** CONTACT SECTION  ******************/
-    .invitation {
-        position: relative;
-        top: 5em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .contact {
-        position: relative;
-        top: 3.5em;
-    }
     .contact__details-party {
         display: flex;
         justify-content: space-around;
@@ -1139,17 +1119,6 @@ body {
         text-align: center;
     }
     /******************** CONTACT SECTION  ******************/
-    .invitation {
-        position: relative;
-        top: 5em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .contact {
-        position: relative;
-        top: 3.5em;
-    }
     .contact__details-party {
         display: flex;
         justify-content: space-around;
