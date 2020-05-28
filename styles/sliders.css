@@ -67,13 +67,8 @@
     }
   }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   /******************** GALLERY SLIDER **************************/
-  .gallery,
-  .gallery__noclegi {
-    height: 30em;
-    width: 100vw;
-  }
   .gallery__slider-button-previous-wrapper,
   .gallery__slider-button-next-wrapper {
     position: absolute;
@@ -140,13 +135,7 @@
   /******************** GALLERY SLIDER ********************/
 }
 /******************** GALLERY SLIDER ??????**************************/
-@media (min-width: 769px) {
-  .gallery,
-  .gallery__noclegi {
-    height: 15em;
-    width: 100%;
-    position: relative;
-  }
+@media (min-width: 1025px) {
   .gallery__slider-button-previous-wrapper,
   .gallery__slider-button-next-wrapper {
     position: absolute;
