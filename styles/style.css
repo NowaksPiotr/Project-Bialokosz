@@ -192,9 +192,11 @@ body {
     .separator {
         width: 100vw;
         margin: 2em 0 2em 0;
+        box-sizing: border-box;
     }
     .separator__wrapper {
         width: 100%;
+        padding: 1em 0 1em 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -247,6 +249,7 @@ body {
     .description__text--offer {
         text-align: center;
         font-size: 1.3em;
+        padding-bottom: 1em;
     }
     .description__text--special {
         margin: 1em 1em 0 1em;
@@ -274,6 +277,7 @@ body {
         width: 100%;
         text-align: center;
         font-size: 1.2em;
+        padding-top: 1em;
     }
     .service__list {
         list-style: none;
@@ -564,8 +568,8 @@ body {
     /******************** WELCOME PHOTO *********************/
     /*******************  SCROLL BUTTON *********************/
     .scroll__button-wrapper, .scroll__button-link {
-        height: 6em;
-        width: 6em;
+        height: 4em;
+        width: 4em;
         position: absolute;
         left: 50%;
         bottom: 3em;
@@ -576,8 +580,8 @@ body {
         z-index: 10;
     }
     .scroll__button {
-        height: 6em;
-        width: 6em;
+        height: 4em;
+        width: 4em;
         border-top: none;
         border-left: none;
         border-bottom: 6px solid white;
@@ -674,6 +678,7 @@ body {
     .description__text--offer {
         text-align: center;
         font-size: 1.3em;
+        padding-bottom: 1em;
     }
     .description__text--special {
         margin: 1em 1em 0 1em;
@@ -701,6 +706,7 @@ body {
         width: 100%;
         text-align: center;
         font-size: 1.2em;
+        padding-top: 1em;
     }
     .service__list {
         list-style: none;
