@@ -1,6 +1,6 @@
 body {
-    font-family: 'Petit Formal Script', cursive;
-      margin: 0;
+  font-family: "Petit Formal Script", cursive;
+  margin: 0;
   color: rgb(80, 80, 80);
   background-color: rgb(248, 242, 242);
 }
@@ -1036,10 +1036,10 @@ body {
   }
   /***********************   SEPARATOR    ***********************/
   /******************* DESCRIPTION SECTION **********************/
-  .description {
+  .description, .offer {
     width: 100vw;
     box-sizing: border-box;
-    padding: 0 10% 0 10%;
+    padding: 0 15% 0 15%;
   }
   .description__title-wrapper {
     width: 100%;
@@ -1103,6 +1103,7 @@ body {
   .description__text {
     margin: 2em 1em 2em 1em;
     text-align: center;
+    line-height: 2em;
   }
   .description__text--offer {
     text-align: center;
@@ -1116,11 +1117,6 @@ body {
   .description__text--asteriks,
   .description__text--end {
     text-align: center;
-  }
-  .offer {
-    width: 100vw;
-    box-sizing: border-box;
-    padding: 0 10% 0 10%;
   }
   .room__description-wrapper {
     width: 100%;
