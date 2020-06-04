@@ -48,7 +48,7 @@ function hamburgerClose() {
 //*************************FIXED MENU AND SCROLL UP*******************************************
 function scrolling() {
   let scrollPosition = window.scrollY;
-  if (scrollPosition >= 45) {
+  if (scrollPosition >= 680) {
     navContainer.classList.add("navigation__container-fixed");
     navWrapper.classList.add("navigation__wrapper-fixed");
     logoContainer.classList.add("logo__container-fixed");
