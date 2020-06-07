@@ -1,7 +1,7 @@
 body {
   font-family: "Petit Formal Script", cursive;
   margin: 0;
-  color: rgb(80, 80, 80);
+  color: rgb(60, 60, 60);
   background-color: rgb(248, 242, 242);
 }
 
@@ -412,11 +412,12 @@ body {
   }
   .contact__details-address-map-wrap {
     margin: 0;
+    width: 100%;
   }
   .contact__details-address-map {
     position: relative;
     height: 15em;
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -443,6 +444,7 @@ body {
     margin: 0 0 2em 0;
   }
   .services__wrapper--special {
+    padding: 0 1em 0 1em;
     max-height: 300em;
     transition: max-height 0.8s ease-in;
   }
@@ -715,7 +717,7 @@ body {
   /***********************      LOGO      ***********************/
   /***********************   SEPARATOR    ***********************/
   .separator {
-    width: 100vw;
+    width: 100%;
     margin: 2em 0 2em 0;
   }
   .separator__wrapper {
@@ -731,8 +733,10 @@ body {
   /***********************   SEPARATOR    ***********************/
   /******************* DESCRIPTION SECTION **********************/
   .description,
-  .description__title-wrapper {
+  .offer{
     width: 100vw;
+    box-sizing: border-box;
+    padding: 0 10% 0 10%;
   }
   .description__mobile-logo-wrapper {
     position: relative;
@@ -747,7 +751,6 @@ body {
     transform: translate(-50%);
     width: 45%;
   }
-  .description__title-wrapper,
   .description__title {
     margin: 0;
     padding: 0;
@@ -762,15 +765,28 @@ body {
     text-align: center;
   }
   .description__paragraphs-wrapper {
+    position: relative;
     box-sizing: border-box;
-    padding: 2em 0 2em 0;
+    padding: 3em 1em 3em 1em;
     background-color: rgb(255, 255, 255);
-    /* border-radius: 20% 0 20% 0; */
-    margin: 6em 5em 6em 5em;
+    margin: 3em 0 3em 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   }
-  .description__text {
-    margin: 2em 1em 2em 1em;
-    text-align: left;
+  .description__paragraphs-wrapper:before,
+  .description__paragraphs-wrapper:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    border-radius: 100px / 10px;
+  }
+  .description__paragraphs-wrapper:after {
+    right: 10px;
+    left: auto;
   }
   .description__text--offer {
     text-align: center;
@@ -789,7 +805,6 @@ body {
   .offer {
     position: relative;
     top: 2em;
-    width: 100vw;
   }
   .room__description-wrapper {
     width: 100%;
@@ -892,11 +907,12 @@ body {
   }
   .contact__details-address-map-wrap {
     margin: 0;
+    width: 100%;
   }
   .contact__details-address-map {
     position: relative;
-    height: 35em;
-    width: 100vw;
+    height: 30em;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -1254,14 +1270,12 @@ body {
   }
   .description__wrapper {
     box-sizing: border-box;
-    /* padding: 0 10% 0 10%; */
   }
   .description__paragraphs-wrapper {
     position: relative;
     box-sizing: border-box;
     padding: 3em 0 3em 0;
     background-color: rgb(255, 255, 255);
-    /* border-radius: 20% 0 20% 0; */
     margin: 3em 0 3em 0;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   }
@@ -1399,6 +1413,7 @@ body {
   }
   .contact__details-address-map-wrap {
     margin: 0;
+    width: 100%;
   }
   .contact__details-address-map {
     position: relative;
@@ -1423,6 +1438,11 @@ body {
     width: 2em;
     margin: 0;
     padding: 1em;
+    transition: .8s;
+  }
+  .media__facebook:hover, .media__instagram:hover, .media__tripadvisor:hover{
+    transform: scale(1.1);
+    transition: .3s;
   }
   .footer {
     box-sizing: border-box;
