@@ -1271,7 +1271,7 @@ body {
   .description__wrapper {
     box-sizing: border-box;
   }
-  .description__paragraphs-wrapper {
+  .description__paragraphs-wrapper{
     position: relative;
     box-sizing: border-box;
     padding: 3em 0 3em 0;
