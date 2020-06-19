@@ -1032,7 +1032,7 @@ body {
     position: fixed;
     box-sizing: border-box;
     font-size: .8em;
-    padding: 0 20% 0 19%;
+    padding: 0 15% 0 15%;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -1168,7 +1168,6 @@ body {
     position: absolute;
     top: 17em;
     left: 6.5em;
-    /* transition: 0.8s; */
     z-index: 2;
   }
   .logo__bialokosz-fixed{
@@ -1178,7 +1177,6 @@ body {
     top: 0;
     left:0;
     height: 3.5em;
-    /* transition: 0.8s; */
     z-index: 1000;
   }
   .logo__container {
@@ -1197,7 +1195,7 @@ body {
     position: absolute;
     background-color:transparent;
     top: 0;
-    left: 20%;
+    left: 15%;
     width: 5em;
     height: 3em;
     display: flex;
