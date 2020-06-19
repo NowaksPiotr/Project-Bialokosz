@@ -1168,7 +1168,7 @@ body {
     position: absolute;
     top: 17em;
     left: 6.5em;
-    transition: 0.8s;
+    /* transition: 0.8s; */
     z-index: 2;
   }
   .logo__bialokosz-fixed{
@@ -1178,7 +1178,7 @@ body {
     top: 0;
     left:0;
     height: 3.5em;
-    transition: 0.8s;
+    /* transition: 0.8s; */
     z-index: 1000;
   }
   .logo__container {

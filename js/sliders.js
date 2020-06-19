@@ -70,6 +70,7 @@ photoWrapper.forEach(function changing(photosWrapper, index) {
   if (counter == 10) {
     counter = 0;
   }
+  console.log(photo[index]);
   photo[index].remove();
   newPhoto.setAttribute("class", "slide__photos-bialokosz");
   newPhoto.setAttribute(
