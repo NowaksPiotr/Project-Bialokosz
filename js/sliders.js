@@ -5,8 +5,12 @@ const buttonNext = document.querySelectorAll(".gallery__button-next");
 
 // Variables
 let counter = 0;
-let photosArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
+let photosArray = [
+  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+];
+let pp = ["odbyt", "jaja"];
+let noclegi = document.querySelector(".noclegi");
 // Interval
 let intervalID = setInterval(changePhoto, 8000);
 let flag = true;
@@ -24,10 +28,12 @@ buttonNext.forEach(function (nextButton, index) {
     }
     photo[index].remove();
     newPhoto.setAttribute("class", "slide__photos-bialokosz");
+    if(noclegi){
     newPhoto.setAttribute(
       "src",
-      "./assets/photos/slider/" + photosArray[counter] + ".jpg"
+      "./assets/photos/slider/noclegi/" + photosArray[0][counter] + ".jpg"
     );
+    }
     photoWrapper[index].append(newPhoto);
     clearInterval(intervalID);
     flag = false;
@@ -45,10 +51,17 @@ buttonPrevious.forEach(function (previousButton, index) {
     }
     photo[index].remove();
     newPhoto.setAttribute("class", "slide__photos-bialokosz");
-    newPhoto.setAttribute(
+    if(noclegi){
+      newPhoto.setAttribute(
+        "src",
+        "./assets/photos/slider/noclegi/" + photosArray[1][counter] + ".jpg"
+      );
+    }else{
+      newPhoto.setAttribute(
       "src",
-      "./assets/photos/slider/" + photosArray[counter] + ".jpg"
+      "./assets/photos/slider/" + photosArray[0][counter] + ".jpg"
     );
+      }
     photoWrapper[index].append(newPhoto);
     clearInterval(intervalID);
     flag = false;
@@ -62,20 +75,25 @@ function checkInterval() {
     intervalID = setInterval(changePhoto, 8000);
   }
 }
-function changePhoto(){
-photoWrapper.forEach(function changing(photosWrapper, index) {
-  let photo = document.querySelectorAll(".slide__photos-bialokosz");
-  let newPhoto = document.createElement("img");
+function changePhoto() {
   counter++;
   if (counter == 10) {
-    counter = 0;
+    counter= 0;
   }
-  photo[index].remove();
-  newPhoto.setAttribute("class", "slide__photos-bialokosz");
-  newPhoto.setAttribute(
-    "src",
-    "./assets/photos/slider/" + photosArray[counter] + ".jpg"
-  );
-  photosWrapper.append(newPhoto);
-})
-}
+  photoWrapper.forEach(function changing(photosWrapper, index){
+      let photo = document.querySelectorAll(".slide__photos-bialokosz");
+      let newPhoto = document.createElement("img");
+      photo[index].remove();
+      newPhoto.setAttribute("class", "slide__photos-bialokosz");
+      if(noclegi){
+      newPhoto.setAttribute(
+        "src",
+        "./assets/photos/slider/noclegi/" + photosArray[1][counter] + ".jpg");
+      }else{
+      newPhoto.setAttribute(
+        "src",
+        "./assets/photos/slider/" + photosArray[0][counter] + ".jpg"
+      );
+      }
+      photosWrapper.append(newPhoto);
+    })}

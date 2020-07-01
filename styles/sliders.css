@@ -163,7 +163,7 @@
   .gallery__slider-button-next-wrapper {
     right: 0.5em;
   }
-  .gallery__button-previous {
+  .gallery__button-previous, .gallery__button-next {
     width: 1.5em;
     height: 1.4em;
     transform: rotate(45deg);
@@ -172,12 +172,8 @@
     opacity: 0.5;
   }
   .gallery__button-next {
-    width: 1.5em;
-    height: 1.4em;
-    transform: rotate(45deg);
     border-top: 3px solid rgb(0, 0, 0);
     border-right: 3px solid rgb(0, 0, 0);
-    opacity: 0.5;
   }
   .gallery__button-previous:hover,
   .gallery__button-next:hover {

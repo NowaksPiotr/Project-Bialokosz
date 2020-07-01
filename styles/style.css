@@ -1488,4 +1488,8 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .noclegi{
+    position: absolute;
+    top: -100%;
+  }
 }
