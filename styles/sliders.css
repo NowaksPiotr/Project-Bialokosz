@@ -167,9 +167,12 @@
     width: 1.5em;
     height: 1.4em;
     transform: rotate(45deg);
+
+    opacity: 0.5;
+  }
+  .gallery__button-previous{
     border-bottom: 3px solid rgb(0, 0, 0);
     border-left: 3px solid rgb(0, 0, 0);
-    opacity: 0.5;
   }
   .gallery__button-next {
     border-top: 3px solid rgb(0, 0, 0);
