@@ -48,9 +48,18 @@ let allPhotos = [
     slider: [
       [1,2,3,4,5,6,7,8,9,10,11,12,13]
     ]
+  },
+  {
+    siteName: "Biznes Pałac Białokosz",
+    folderName: [1,2],
+    slider: [
+      [1,2,3,4,5,6,7,8],
+      [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+    ]
   }
 ];
 /*********************************************************/
+//Next photo function
 buttonNext.forEach(function (nextButton, index) {
   nextButton.addEventListener("click", nextPhoto);
   function nextPhoto() {
@@ -107,6 +116,18 @@ buttonNext.forEach(function (nextButton, index) {
           allPhotos[3].slider[index][counter] +
           ".jpg"
       );
+    }else if(allPhotos[4].siteName === documentTitle) {
+      if (counter > allPhotos[4].slider[index].length - 1) {
+        counter = 0;
+      }
+      newPhoto.setAttribute(
+        "src",
+        "./assets/photos/slider/biznes" +
+          allPhotos[4].folderName[index] +
+          "/" +
+          allPhotos[4].slider[index][counter] +
+          ".jpg"
+      );
     }
     photoWrapper[index].append(newPhoto);
     clearInterval(intervalID);
@@ -114,6 +135,7 @@ buttonNext.forEach(function (nextButton, index) {
     checkInterval();
   }
 });
+//Previous photo function
 buttonPrevious.forEach(function (previousButton, index) {
   previousButton.addEventListener("click", previousPhoto);
   function previousPhoto() {
@@ -170,6 +192,18 @@ buttonPrevious.forEach(function (previousButton, index) {
           allPhotos[3].slider[index][counter] +
           ".jpg"
       );
+    }else if(allPhotos[4].siteName === documentTitle) {
+      if (counter < 0) {
+        counter = allPhotos[4].slider[index].length - 1;
+      }
+      newPhoto.setAttribute(
+        "src",
+        "./assets/photos/slider/biznes/" +
+          allPhotos[4].folderName[index] +
+          "/" +
+          allPhotos[4].slider[index][counter] +
+          ".jpg"
+      );
     }
     photoWrapper[index].append(newPhoto);
     clearInterval(intervalID);
@@ -177,13 +211,14 @@ buttonPrevious.forEach(function (previousButton, index) {
     checkInterval();
   }
 });
-
+//If interval is true sets new interval
 function checkInterval() {
   if (flag != true) {
     flag = true;
-    intervalID = setInterval(changePhoto, 4000);
+    intervalID = setInterval(changePhoto, 8000);
   }
 }
+//Function to change photo every 8 sec
 function changePhoto() {
   counter++;
   photoWrapper.forEach(function changing(photosWrapper, index) {
@@ -201,6 +236,10 @@ function changePhoto() {
       }
     }else if(allPhotos[3].siteName === documentTitle) {
       if (counter > allPhotos[3].slider[index].length - 1) {
+        counter = 0;
+      }
+    }else if(allPhotos[4].siteName === documentTitle){
+      if(counter > allPhotos[4].slider[index].length -1){
         counter = 0;
       }
     }
@@ -242,6 +281,15 @@ function changePhoto() {
           allPhotos[3].folderName[index] +
           "/" +
           allPhotos[3].slider[index][counter] +
+          ".jpg"
+      );
+    }else if(allPhotos[4].siteName === documentTitle){
+      newPhoto.setAttribute(
+        "src",
+        "./assets/photos/slider/biznes/" +
+          allPhotos[4].folderName[index] +
+          "/" +
+          allPhotos[4].slider[index][counter] +
           ".jpg"
       );
     }

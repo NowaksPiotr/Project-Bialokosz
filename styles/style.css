@@ -1049,7 +1049,7 @@ body {
     transition: .8s;
   }
   .navigation__wrapper-fixed{
-    border: 1px solid rgb(80, 80, 80);
+    border: 1px solid rgba(80, 80, 80, .3);
     border-top: none;
     transition: .8s;
   }
