@@ -2,7 +2,9 @@ body {
   font-family: "Petit Formal Script", cursive;
   margin: 0;
   color: rgb(31, 31, 31);
-  background-color:rgb(236, 226, 226);
+  /* background-color:rgb(236, 226, 226); */
+  background: url(../assets/bcg.jpeg);
+  background-attachment: fixed;
 }
 
 /********** MEDIA QUERIES FOR DEVICE MAX-WIDTH: 480px ****************/
@@ -285,12 +287,36 @@ body {
   .description__paragraphs-wrapper {
     padding: 1em 0 1em 0;
     background-color: rgb(255, 255, 255);
-    /* border-radius: 20% 0 20% 0; */
     margin: 3em 0 3em 0;
+  }
+  .description__paragraphs-wrapper{
+    position: relative;
+    box-sizing: border-box;
+    padding: 3em 0 3em 0;
+    background-color: rgb(255, 255, 255);
+    margin: 3em 0 3em 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  }
+  .description__paragraphs-wrapper:before,
+  .description__paragraphs-wrapper:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    border-radius: 100px / 10px;
+  }
+  .description__paragraphs-wrapper:after {
+    right: 10px;
+    left: auto;
   }
   .description__text {
     margin: 2em 1em 2em 1em;
     text-align: left;
+    padding: 0 1em 0 1em;
   }
   .description__text--offer {
     text-align: center;
@@ -331,8 +357,9 @@ body {
   .service__list {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 1em;
     text-align: left;
+    line-height: 1.6;
   }
   .service__list--special {
     list-style: circle;
@@ -826,8 +853,9 @@ body {
   .service__list {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 1em;
     text-align: left;
+    line-height: 1.6;
   }
   .service__list--special {
     list-style: circle;
@@ -1066,12 +1094,15 @@ body {
   .welcome__wrapper {
     width: 100%;
     box-sizing: border-box;
-    padding: 0 10% 0 9%;
+    padding: 0 10% 0 10%;
     display: flex;
     justify-content: center;
+    overflow: hidden;
   }
   .welcome__photo {
     width: 100%;
+    height: 100vh;
+    z-index: -100;
   }
   /******************** WELCOME PHOTO *********************/
   /*******************  SCROLL BUTTON *********************/
@@ -1329,8 +1360,9 @@ body {
   .service__list {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 1em;
     text-align: left;
+    line-height: 1.6;
   }
   .service__list--special {
     list-style: circle;
@@ -1344,6 +1376,35 @@ body {
   .service__list-dropdown {
     list-style: lower-alpha;
   }
+  /*********************** SIDE MENU ****************************/
+  .side__menu{
+    position: fixed;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,.5);
+    border: 3px double rgb(0, 0, 0);
+    transition: .8s;
+    z-index: 99;
+  }
+  .side__menu--active{
+    left: -15%;
+    transition: .8s;
+  }
+  .side__menu:hover{
+    left: 0;
+  }
+  .side__menu-list{
+    list-style: none;
+    line-height: 1.6;
+  }
+  .side__menu-element{
+    cursor: pointer;
+  }
+  .side__menu-element--active{
+    text-decoration: underline;
+  }
+  /*********************** SIDE MENU ****************************/
   /******************* DESCRIPTION SECTION **********************/
   /******************* DROPDOWN BUTTON **************************/
   .dropdown__button-wrapper {

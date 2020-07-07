@@ -7,12 +7,14 @@ const closeHamburgerBackground = document.querySelector(".background");
 
 //SMOOTH SCROLL
 const scrollButton = document.querySelector(".scroll__button");
-const headerElement = document.querySelector(".description__mobile-logo-container");
+const headerElement = document.querySelector(
+  ".description__mobile-logo-container"
+);
 //SMOOTH SCROLL
 
 //SCROLL UP BUTTON
 const scrollUP = document.querySelector(".scroll-up");
-const scrollUPtarget = document.querySelector('.welcome');
+const scrollUPtarget = document.querySelector(".welcome");
 //SCROLL UP BUTTON
 
 //DROPDOWN BUTTON
@@ -26,6 +28,10 @@ const navWrapper = document.querySelector(".navigation__wrapper");
 const logoContainer = document.querySelector(".logo__container");
 const logoImage = document.querySelector(".logo__bialokosz");
 
+//SIDE MENU
+const sideMenu = document.querySelector(".side__menu");
+let roomType = document.querySelectorAll(".side__menu-element");
+let scrollToRoom = document.querySelectorAll(".separator");
 //***********************HAMBURGER MENU*******************************************************
 
 hamburger.addEventListener("click", openHamburgerMenu);
@@ -53,16 +59,22 @@ function scrolling() {
     navWrapper.classList.add("navigation__wrapper-fixed");
     logoContainer.classList.add("logo__container-fixed");
     logoImage.classList.add("logo__bialokosz-fixed");
+    if (sideMenu) {
+      sideMenu.classList.add("side__menu--active");
+    }
   } else {
     navContainer.classList.remove("navigation__container-fixed");
     navWrapper.classList.remove("navigation__wrapper-fixed");
     logoContainer.classList.remove("logo__container-fixed");
     logoImage.classList.remove("logo__bialokosz-fixed");
+    if (sideMenu) {
+      sideMenu.classList.remove("side__menu--active");
+    }
   }
-  if (scrollPosition >= 1750){
-    scrollUP.classList.add('scroll-up__show')
-  }else{
-    scrollUP.classList.remove('scroll-up__show');
+  if (scrollPosition >= 1750) {
+    scrollUP.classList.add("scroll-up__show");
+  } else {
+    scrollUP.classList.remove("scroll-up__show");
   }
 }
 window.addEventListener("scroll", scrolling);
@@ -74,10 +86,16 @@ scrollButton.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+roomType.forEach(function scrollMe(pageRoom, index) {
+  roomType[index].addEventListener("click", () => {
+  console.log(window.scrollY);
+    scrollToRoom[index].scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
 //***********************SMOOTH SCROLL********************************************************
-
 //***********************SMOOTH SCROLL UP*****************************************************
-
 
 scrollUP.addEventListener("click", () => {
   scrollUPtarget.scrollIntoView({

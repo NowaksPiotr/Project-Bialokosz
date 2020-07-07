@@ -213,7 +213,7 @@ buttonPrevious.forEach(function (previousButton, index) {
 });
 //If interval is true sets new interval
 function checkInterval() {
-  if (flag != true) {
+  if (flag !== true) {
     flag = true;
     intervalID = setInterval(changePhoto, 8000);
   }
