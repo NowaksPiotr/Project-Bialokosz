@@ -23,17 +23,15 @@
     width: 1.5em;
     height: 1.4em;
     transform: rotate(45deg);
-    border-bottom: 3px solid rgb(0, 0, 0);
-    border-left: 3px solid rgb(0, 0, 0);
-    opacity: 0.5;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    border-left: 3px solid rgb(255, 255, 255);
   }
   .gallery__button-next {
     width: 1.5em;
     height: 1.4em;
     transform: rotate(45deg);
-    border-top: 3px solid rgb(0, 0, 0);
-    border-right: 3px solid rgb(0, 0, 0);
-    opacity: 0.5;
+    border-top: 3px solid rgb(255, 255, 255);
+    border-right: 3px solid rgb(255, 255, 255);
   }
   .gallery__button-previous:hover,
   .gallery__button-next:hover {
@@ -46,16 +44,17 @@
     justify-content: center;
     align-items: center;
   }
+  .slide__photos-bialokosz{
+    box-sizing: border-box;
+    border: 15px solid rgb(255,255,255);
+  }
   .slide__photos-bialokosz,
-  .slide__photos-bialokosz--noclegi,
   .img__photo {
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    /* max-width: 390px; */
     max-height: 20em;
-    /* border-radius: 10% 0 10% 0; */
     animation: showUp 1s ease-in;
   }
   @keyframes showUp {
@@ -97,7 +96,6 @@
     transform: rotate(45deg);
     border-bottom: 3px solid rgb(0, 0, 0);
     border-left: 3px solid rgb(0, 0, 0);
-    opacity: 0.5;
   }
   .gallery__button-next {
     width: 1.5em;
@@ -105,11 +103,7 @@
     transform: rotate(45deg);
     border-top: 3px solid rgb(0, 0, 0);
     border-right: 3px solid rgb(0, 0, 0);
-    opacity: 0.5;
-  }
-  .gallery__button-previous:hover,
-  .gallery__button-next:hover {
-    opacity: 1;
+
   }
   .photos__wrapper {
     min-height: 25em;
@@ -119,8 +113,11 @@
     align-items: center;
     overflow: hidden;
   }
+  .slide__photos-bialokosz{
+    box-sizing: border-box;
+    border: 15px solid rgb(255,255,255);
+  }
   .slide__photos-bialokosz,
-  .slide__photos-bialokosz--noclegi,
   .img__photo {
     position: relative;
     top: 0;
@@ -167,7 +164,7 @@
     width: 1.5em;
     height: 1.4em;
     transform: rotate(45deg);
-
+    transition: .8s;
     opacity: 0.5;
   }
   .gallery__button-previous{
@@ -180,6 +177,7 @@
   }
   .gallery__button-previous:hover,
   .gallery__button-next:hover {
+    transition: .8s;
     opacity: 1;
   }
   .photos__wrapper {
@@ -190,22 +188,31 @@
     align-items: center;
     overflow: hidden;
   }
+  .slide__photos-bialokosz{
+    box-sizing: border-box;
+    border: 15px solid rgb(255,255,255);
+  }
   .slide__photos-bialokosz,
-  .slide__photos-bialokosz--noclegi,
   .img__photo {
     position: relative;
     top: 0;
     left: 0;
     max-width: 100%;
     max-height: 30em;
-    animation: showUp 1.5s ease-in;
+    animation: showUp 8s ease-in;
   }
   @keyframes showUp {
     0% {
       opacity: 0;
     }
-    100% {
+    20% {
       opacity: 1;
+    }
+    90%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
     }
   }
 }

@@ -1,8 +1,8 @@
 body {
   font-family: "Petit Formal Script", cursive;
   margin: 0;
-  color: rgb(60, 60, 60);
-  background-color: rgb(248, 242, 242);
+  color: rgb(31, 31, 31);
+  background-color:rgb(236, 226, 226);
 }
 
 /********** MEDIA QUERIES FOR DEVICE MAX-WIDTH: 480px ****************/
@@ -444,7 +444,7 @@ body {
     margin: 0 0 2em 0;
   }
   .services__wrapper--special {
-    padding: 0 1em 0 1em;
+    padding: 1em;
     max-height: 300em;
     transition: max-height 0.8s ease-in;
   }
@@ -954,6 +954,7 @@ body {
     margin: 0 0 2em 0;
   }
   .services__wrapper--special {
+    padding: 1em;
     max-height: 300em;
     transition: max-height 0.8s ease-in;
   }
@@ -1464,6 +1465,8 @@ body {
     margin: 0 0 2em 0;
   }
   .services__wrapper--special {
+    padding: 1em;
+    line-height: 1.8;
     max-height: 300em;
     transition: max-height 0.8s ease-in;
   }

@@ -8,7 +8,7 @@ let counter = 0;
 //WHICH SITE RECOGNITION
 let documentTitle = document.title;
 // Interval
-let intervalID = setInterval(changePhoto, 4000);
+let intervalID = setInterval(changePhoto, 8000);
 let flag = true;
 
 //Photos
