@@ -122,7 +122,7 @@ buttonNext.forEach(function (nextButton, index) {
       }
       newPhoto.setAttribute(
         "src",
-        "./assets/photos/slider/biznes" +
+        "./assets/photos/slider/biznes/" +
           allPhotos[4].folderName[index] +
           "/" +
           allPhotos[4].slider[index][counter] +

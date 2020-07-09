@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  z-index: -999;
+}
 body {
   font-family: "Petit Formal Script", cursive;
   margin: 0;
@@ -6,15 +12,16 @@ body {
   background: url(../assets/bcg.jpeg);
   background-attachment: fixed;
 }
-
+.description__text {
+  margin: 2em 1em 2em 1em;
+  text-align: center;
+  padding: 0 1em 0 1em;
+}
 /********** MEDIA QUERIES FOR DEVICE MAX-WIDTH: 480px ****************/
 
 @media (max-width: 480px) {
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    z-index: -999;
+  .side__menu{
+    display: none;
   }
   /*********************** HAMBURGER MENU ***********************/
   .hamburger {
@@ -313,11 +320,11 @@ body {
     right: 10px;
     left: auto;
   }
-  .description__text {
+  /* .description__text {
     margin: 2em 1em 2em 1em;
     text-align: left;
     padding: 0 1em 0 1em;
-  }
+  } */
   .description__text--offer {
     text-align: center;
     font-size: 1.3em;
@@ -519,6 +526,9 @@ body {
     margin: 0;
     padding: 0;
     z-index: -999;
+  }
+  .side__menu{
+    display: none;
   }
   /*********************** HAMBURGER MENU ***********************/
   .hamburger {
@@ -1293,7 +1303,7 @@ body {
   .description__title-wrapper {
     margin-bottom: 2em;
   }
-  .description__title {
+  .description__title, .side__menu-title {
     text-align: center;
   }
   .description__wrapper {
@@ -1396,6 +1406,7 @@ body {
   }
   .side__menu-list{
     list-style: none;
+    padding: 0 1em;
     line-height: 1.6;
   }
   .side__menu-element{

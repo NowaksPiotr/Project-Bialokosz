@@ -1,3 +1,4 @@
+const siteName = document.title;
 //HAMBURGER MENU
 const hamburger = document.querySelector(".hamburger");
 const hamburgerBar = document.querySelector(".hamburger__bar");
@@ -32,6 +33,7 @@ const logoImage = document.querySelector(".logo__bialokosz");
 const sideMenu = document.querySelector(".side__menu");
 let roomType = document.querySelectorAll(".side__menu-element");
 let scrollToRoom = document.querySelectorAll(".separator");
+
 //***********************HAMBURGER MENU*******************************************************
 
 hamburger.addEventListener("click", openHamburgerMenu);
@@ -103,7 +105,19 @@ scrollUP.addEventListener("click", () => {
   });
 });
 //***********************SMOOTH SCROLL UP******************************************************
-
+//***********************SIDE MENU - ACTIVE TOGGLE ********************************************
+if(siteName === "Noclegi Pałac Białokosz"){
+  roomType.forEach(function(el, index){
+    el.addEventListener('click', ()=>{
+      let selected = document.querySelector('.side__menu-element--active');
+      if(selected){
+        selected.classList.remove('side__menu-element--active');
+      }
+      el.classList.add('side__menu-element--active');
+    })
+  })
+}
+//***********************SIDE MENU - ACTIVE TOGGLE ********************************************
 //***********************DROPDOWN BUTTON******************************************************
 //If dropdownButton is availavle function is started
 if (dropdownButton) {

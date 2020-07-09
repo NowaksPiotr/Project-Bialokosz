@@ -46,7 +46,9 @@
   }
   .slide__photos-bialokosz{
     box-sizing: border-box;
-    border: 15px solid rgb(255,255,255);
+    border-top: 15px double rgb(214, 209, 209);
+    border-bottom: 15px double rgb(214, 209, 209);
+
   }
   .slide__photos-bialokosz,
   .img__photo {
@@ -55,14 +57,20 @@
     left: 0;
     width: 100%;
     max-height: 20em;
-    animation: showUp 1s ease-in;
+    animation: showUp 8s ease-in;
   }
   @keyframes showUp {
     0% {
       opacity: 0;
     }
-    100% {
+    20% {
       opacity: 1;
+    }
+    90%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
     }
   }
 }
@@ -115,7 +123,7 @@
   }
   .slide__photos-bialokosz{
     box-sizing: border-box;
-    border: 15px solid rgb(255,255,255);
+    border: 15px double rgb(214, 209, 209);
   }
   .slide__photos-bialokosz,
   .img__photo {
@@ -124,18 +132,24 @@
     left: 0;
     max-width: 100%;
     max-height: 30em;
-    animation: showUp 1s ease-in;
+    animation: showUp 8s ease-in;
   }
   @keyframes showUp {
     0% {
       opacity: 0;
     }
-    100% {
+    20% {
       opacity: 1;
     }
+    90%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
   }
-  /******************** GALLERY SLIDER ********************/
 }
+  /******************** GALLERY SLIDER ********************/
 /******************** GALLERY SLIDER ??????**************************/
 @media (min-width: 1025px) {
   .gallery__slider-button-previous-wrapper,
