@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   z-index: -999;
+  overflow-x: hidden !important;
 }
 body {
   font-family: "Petit Formal Script", cursive;
@@ -17,8 +18,8 @@ body {
   text-align: center;
   padding: 0 1em 0 1em;
 }
-  /***********************  WELCOME PHOTO ***********************/
-  .welcome {
+/***********************  WELCOME PHOTO ***********************/
+.welcome {
   height: 100vh;
   position: relative;
   top: 0;
@@ -28,22 +29,129 @@ body {
   justify-content: center;
   align-items: flex-end;
 }
-  .welcome__wrapper {
-    position: relative;
-    top: -1.5em;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  .welcome__photo {
-    height: 100%;
-    width: 100%;
-  }
-  /******************** WELCOME PHOTO *********************/
+.welcome__wrapper {
+  position: relative;
+  top: -1.5em;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.welcome__photo {
+  height: 100%;
+  width: 100%;
+}
+/******************** WELCOME PHOTO *********************/
+/******************* SCROLL UP BUTTON *************************/
+.scroll-up {
+  display: none;
+}
+.scroll-up__show {
+  display: block;
+  position: fixed;
+  top: 85vh;
+  left: 90vw;
+  height: 3em;
+  width: 3em;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 999;
+}
+.scroll-up__button-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.scroll-up__button,
+.scroll-up__button::after {
+  display: block;
+  width: 1em;
+  height: 1em;
+  transform: rotate(45deg) translate(10%, 10%);
+  background-color: transparent;
+  border-top: 3px solid rgb(80, 80, 80);
+  border-left: 3px solid rgb(80, 80, 80);
+}
+.scroll-up__button::after {
+  content: "";
+  transform: translate(30%, 30%);
+}
+.scroll-up__button-wrapper:hover {
+  transform: scale(1.2);
+  transition: 0.8s;
+}
+/******************* SCROLL UP BUTTON *************************/
+/*********************** SIDE MENU ****************************/
+.side__menu {
+  position: fixed;
+  left: -50%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  border: 3px double rgb(0, 0, 0);
+  transition: 0.8s;
+  z-index: 99;
+}
+.side__menu--active {
+  left: -15%;
+  transition: 0.8s;
+}
+.side__menu:hover {
+  left: 0;
+}
+.side__menu-list {
+  list-style: none;
+  padding: 0 1em;
+  line-height: 1.6;
+}
+.side__menu-element {
+  cursor: pointer;
+}
+.side__menu-element--active {
+  text-decoration: underline;
+}
+/*********************** SIDE MENU ****************************/
+/***********************   SEPARATOR    ***********************/
+.separator {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 2em 0 2em 0;
+}
+.separator__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.separator__image {
+  width: 100%;
+  height: 1.5em;
+}
+/***********************   SEPARATOR    ***********************/
+/***********************    FOOTER      ***********************/
+.footer {
+  width: 100vw;
+  position: relative;
+  margin-top: 2em;
+  font-size: 0.8em;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.footer__text {
+  padding-top: 1em;
+  font-size: 0.7em;
+}
+/***********************    FOOTER      ***********************/
 /********** MEDIA QUERIES FOR DEVICE MAX-WIDTH: 480px ****************/
 
 @media (max-width: 480px) {
-  .side__menu{
+  .side__menu {
     display: none;
   }
   /*********************** HAMBURGER MENU ***********************/
@@ -183,47 +291,11 @@ body {
     }
   }
   /***********************  SCROLL BUTTON ***********************/
-    /******************* SCROLL UP BUTTON *************************/
-    .scroll-up{
-      display: none;
-    }
-    .scroll-up__show{
-      display: block;
-      position: fixed;
-      top: 85vh;
-      left: 85vw;
-      height: 3em;
-      width: 3em;
-      background-color: transparent;
-      border-radius: 50%;
-      z-index: 999;
-    }
-  
-    .scroll-up__show:hover{
-      border-radius: 0;
-    }
-    .scroll-up__button-wrapper{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .scroll-up__button, .scroll-up__button::after{
-      display: block;
-      width: 1em;
-      height: 1em;
-      transform: rotate(45deg) translate(10%, 10%);
-      background-color: transparent;
-      border-top: 3px solid rgb(80, 80, 80);
-      border-left: 3px solid rgb(80, 80, 80);
-    }
-    .scroll-up__button::after{
-      content: '';
-      transform: translate(30%, 30%);
-    }
-    /******************* SCROLL UP BUTTON *************************/
+  /******************* SCROLL UP BUTTON *************************/
+  .scroll-up__show {
+    left: 85vw;
+  }
+  /******************* SCROLL UP BUTTON *************************/
   /***********************      LOGO      ***********************/
   .logo {
     z-index: 10;
@@ -241,24 +313,6 @@ body {
     z-index: 10;
   }
   /***********************      LOGO      ***********************/
-  /***********************   SEPARATOR    ***********************/
-  .separator {
-    width: 100vw;
-    margin: 2em 0 2em 0;
-    box-sizing: border-box;
-  }
-  .separator__wrapper {
-    width: 100%;
-    padding: 1em 0 1em 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .separator__image {
-    width: 100%;
-    height: 1.5em;
-  }
-  /***********************   SEPARATOR    ***********************/
   /******************* DESCRIPTION SECTION **********************/
   .description,
   .description__title-wrapper {
@@ -296,7 +350,7 @@ body {
     background-color: rgb(255, 255, 255);
     margin: 3em 0 3em 0;
   }
-  .description__paragraphs-wrapper{
+  .description__paragraphs-wrapper {
     position: relative;
     box-sizing: border-box;
     padding: 3em 0 3em 0;
@@ -320,11 +374,6 @@ body {
     right: 10px;
     left: auto;
   }
-  /* .description__text {
-    margin: 2em 1em 2em 1em;
-    text-align: left;
-    padding: 0 1em 0 1em;
-  } */
   .description__text--offer {
     text-align: center;
     font-size: 1.3em;
@@ -501,33 +550,10 @@ body {
     justify-content: center;
     align-items: center;
   }
-  /****************  FOOTER *********************/
-  .footer {
-    width: 100vw;
-    position: relative;
-    margin-top: 2em;
-    font-size: 0.8em;
-  }
-  .footer__wrapper {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  .footer__text {
-    padding-top: 1em;
-    font-size: 0.7em;
-  }
-  /****************  FOOTER *********************/
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    z-index: -999;
-  }
-  .side__menu{
+  .side__menu {
     display: none;
   }
   /*********************** HAMBURGER MENU ***********************/
@@ -691,50 +717,6 @@ body {
     }
   }
   /***********************  SCROLL BUTTON ***********************/
-    /******************* SCROLL UP BUTTON *************************/
-    .scroll-up{
-      display: none;
-      transition: 2s;
-    }
-    .scroll-up__show{
-      display: block;
-      position: fixed;
-      top: 85vh;
-      left: 90vw;
-      height: 3em;
-      width: 3em;
-      background-color: transparent;
-      border-radius: 50%;
-      transition: .8s;
-      z-index: 999;
-    }
-  
-    .scroll-up__show:hover{
-      border-radius: 0;
-      transition: .3s;
-    }
-    .scroll-up__button-wrapper{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .scroll-up__button, .scroll-up__button::after{
-      display: block;
-      width: 1em;
-      height: 1em;
-      transform: rotate(45deg) translate(10%, 10%);
-      background-color: transparent;
-      border-top: 3px solid rgb(80, 80, 80);
-      border-left: 3px solid rgb(80, 80, 80);
-    }
-    .scroll-up__button::after{
-      content: '';
-      transform: translate(30%, 30%);
-    }
-    /******************* SCROLL UP BUTTON *************************/
   /***********************      LOGO      ***********************/
   .logo {
     z-index: 10;
@@ -752,25 +734,9 @@ body {
     z-index: 10;
   }
   /***********************      LOGO      ***********************/
-  /***********************   SEPARATOR    ***********************/
-  .separator {
-    width: 100%;
-    margin: 2em 0 2em 0;
-  }
-  .separator__wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .separator__image {
-    width: 100%;
-    height: 3em;
-  }
-  /***********************   SEPARATOR    ***********************/
   /******************* DESCRIPTION SECTION **********************/
   .description,
-  .offer{
+  .offer {
     width: 100vw;
     box-sizing: border-box;
     padding: 0 10% 0 10%;
@@ -971,21 +937,6 @@ body {
     margin: 0;
     padding: 0;
   }
-  .footer {
-    width: 100vw;
-    position: relative;
-    margin-top: 2em;
-    font-size: 0.8em;
-  }
-  .footer__wrapper {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  .footer__text {
-    padding-top: 1em;
-    font-size: 0.7em;
-  }
   .services__wrapper {
     display: flex;
     justify-content: center;
@@ -1018,12 +969,8 @@ body {
 }
 
 @media (min-width: 1025px) {
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    z-index: -999;
-    overflow-x: hidden !important;
+  .separator__image {
+    height: 2em;
   }
   .hamburger,
   .hamburger__mobile-logo-container {
@@ -1049,10 +996,10 @@ body {
     color: rgb(0, 0, 0);
     transition: 0.3s;
   }
-  .navigation__menu-link:last-child:hover{
+  .navigation__menu-link:last-child:hover {
     border-radius: 0 0 25px 0;
   }
-  .navigation__menu-link--active{
+  .navigation__menu-link--active {
     text-decoration: underline;
     color: rgb(0, 0, 0);
     cursor: default;
@@ -1065,9 +1012,9 @@ body {
     display: flex;
     justify-content: center;
     background-color: rgb(255, 255, 255);
-    transition: .8s;
+    transition: 0.8s;
   }
-  .navigation__container-fixed{
+  .navigation__container-fixed {
     position: fixed;
     box-sizing: border-box;
     padding: 0 15% 0 15%;
@@ -1076,7 +1023,7 @@ body {
     justify-content: center;
     background-color: transparent;
     z-index: 999;
-    transition: .8s;
+    transition: 0.8s;
   }
   .navigation__wrapper {
     box-sizing: border-box;
@@ -1085,12 +1032,12 @@ body {
     justify-content: flex-end;
     background-color: rgb(255, 255, 255);
     z-index: 100;
-    transition: .8s;
+    transition: 0.8s;
   }
-  .navigation__wrapper-fixed{
-    border: 1px solid rgba(80, 80, 80, .3);
+  .navigation__wrapper-fixed {
+    border: 1px solid rgba(80, 80, 80, 0.3);
     border-top: none;
-    transition: .8s;
+    transition: 0.8s;
   }
   /*********************** HAMBURGER MENU ***********************/
   /***********************  WELCOME PHOTO ***********************/
@@ -1124,7 +1071,7 @@ body {
     align-items: center;
     z-index: 10;
   }
-  .scroll__button{
+  .scroll__button {
     height: 2em;
     width: 2em;
     border-top: none;
@@ -1147,49 +1094,49 @@ body {
     }
   }
   /***********************  SCROLL BUTTON ***********************/
-    /******************* SCROLL UP BUTTON *************************/
-    .scroll-up{
-      display: none;
-      transition: 2s;
-    }
-    .scroll-up__show{
-      display: block;
-      position: fixed;
-      top: 85vh;
-      left: 90vw;
-      height: 3em;
-      width: 3em;
-      background-color: transparent;
-      border-radius: 50%;
-      cursor: pointer;
-      z-index: 999;
-    }
-    .scroll-up__button-wrapper{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: .3s;
-    }
-    .scroll-up__button, .scroll-up__button::after{
-      display: block;
-      width: 1em;
-      height: 1em;
-      transform: rotate(45deg) translate(10%, 10%);
-      background-color: transparent;
-      border-top: 3px solid rgb(80, 80, 80);
-      border-left: 3px solid rgb(80, 80, 80);
-    }
-    .scroll-up__button::after{
-      content: '';
-      transform: translate(30%, 30%);
-    }
-    .scroll-up__button-wrapper:hover{
-      transform: scale(1.2);
-      transition: .8s;
-    }
+  /******************* SCROLL UP BUTTON *************************/
+  .scroll-up {
+    display: none;
+  }
+  .scroll-up__show {
+    display: block;
+    position: fixed;
+    top: 85vh;
+    left: 90vw;
+    height: 3em;
+    width: 3em;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+  }
+  .scroll-up__button-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+  }
+  .scroll-up__button,
+  .scroll-up__button::after {
+    display: block;
+    width: 1em;
+    height: 1em;
+    transform: rotate(45deg) translate(10%, 10%);
+    background-color: transparent;
+    border-top: 3px solid rgb(80, 80, 80);
+    border-left: 3px solid rgb(80, 80, 80);
+  }
+  .scroll-up__button::after {
+    content: "";
+    transform: translate(30%, 30%);
+  }
+  .scroll-up__button-wrapper:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+  }
   /******************* SCROLL UP BUTTON *************************/
   /***********************      LOGO      ***********************/
   .logo {
@@ -1205,12 +1152,12 @@ body {
     left: 6.5em;
     z-index: 2;
   }
-  .logo__bialokosz-fixed{
+  .logo__bialokosz-fixed {
     display: block;
     width: 100%;
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     height: 3.5em;
     z-index: 1000;
   }
@@ -1226,9 +1173,9 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .logo__container-fixed{
+  .logo__container-fixed {
     position: absolute;
-    background-color:transparent;
+    background-color: transparent;
     top: 0;
     left: 15%;
     width: 5em;
@@ -1245,30 +1192,14 @@ body {
     display: none;
   }
   /***********************      LOGO      ***********************/
-  /***********************   SEPARATOR    ***********************/
-  .separator {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 2em 0 2em 0;
-  }
-  .separator__wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .separator__image {
-    width: 100%;
-    height: 1.5em;
-  }
-  /***********************   SEPARATOR    ***********************/
   /******************* DESCRIPTION SECTION **********************/
-  .description, .offer {
+  .description,
+  .offer {
     width: 100vw;
     box-sizing: border-box;
     padding: 0 15% 0 15%;
   }
-  .description{
+  .description {
     position: relative;
   }
   .description__title-wrapper {
@@ -1298,13 +1229,14 @@ body {
   .description__title-wrapper {
     margin-bottom: 2em;
   }
-  .description__title, .side__menu-title {
+  .description__title,
+  .side__menu-title {
     text-align: center;
   }
   .description__wrapper {
     box-sizing: border-box;
   }
-  .description__paragraphs-wrapper{
+  .description__paragraphs-wrapper {
     position: relative;
     box-sizing: border-box;
     padding: 3em 0 3em 0;
@@ -1381,36 +1313,6 @@ body {
   .service__list-dropdown {
     list-style: lower-alpha;
   }
-  /*********************** SIDE MENU ****************************/
-  .side__menu{
-    position: fixed;
-    left: -50%;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255,255,255,.5);
-    border: 3px double rgb(0, 0, 0);
-    transition: .8s;
-    z-index: 99;
-  }
-  .side__menu--active{
-    left: -15%;
-    transition: .8s;
-  }
-  .side__menu:hover{
-    left: 0;
-  }
-  .side__menu-list{
-    list-style: none;
-    padding: 0 1em;
-    line-height: 1.6;
-  }
-  .side__menu-element{
-    cursor: pointer;
-  }
-  .side__menu-element--active{
-    text-decoration: underline;
-  }
-  /*********************** SIDE MENU ****************************/
   /******************* DESCRIPTION SECTION **********************/
   /******************* DROPDOWN BUTTON **************************/
   .dropdown__button-wrapper {
@@ -1502,29 +1404,16 @@ body {
     width: 2em;
     margin: 0;
     padding: 1em;
-    transition: .8s;
+    transition: 0.8s;
   }
-  .media__facebook:hover, .media__instagram:hover, .media__tripadvisor:hover{
+  .media__facebook:hover,
+  .media__instagram:hover,
+  .media__tripadvisor:hover {
     transform: scale(1.1);
-    transition: .3s;
+    transition: 0.3s;
   }
   .footer {
-    box-sizing: border-box;
-    padding: 0 10% 0 9%;
-    width: 100vw;
-    position: relative;
-    margin-top: 2em;
     font-size: 1em;
-  }
-  .footer__wrapper {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-  }
-  .footer__text {
-    padding-top: 1em;
-    font-size: 0.7em;
   }
   .services__wrapper {
     display: flex;
@@ -1556,7 +1445,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .noclegi{
+  .noclegi {
     position: absolute;
     top: -100%;
   }
