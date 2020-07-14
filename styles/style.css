@@ -114,6 +114,35 @@ body {
   text-decoration: underline;
 }
 /*********************** SIDE MENU ****************************/
+/****** DESCRIPTION ******************************************/
+.description__mobile-logo-wrapper {
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.logo__image {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 45%;
+}
+.description__title-wrapper,
+.description__title {
+  margin: 0;
+  padding: 0;
+}
+.description__title-wrapper--big {
+  margin-bottom: 4em;
+}
+.description__title-wrapper {
+  margin-bottom: 2em;
+}
+.description__title {
+  text-align: center;
+}
+/****** DESCRIPTION ******************************************/
 /***********************   SEPARATOR    ***********************/
 .separator {
   width: 100%;
@@ -317,33 +346,6 @@ body {
   .description,
   .description__title-wrapper {
     width: 100vw;
-  }
-  .description__mobile-logo-wrapper {
-    position: relative;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .logo__image {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    width: 45%;
-  }
-  .description__title-wrapper,
-  .description__title {
-    margin: 0;
-    padding: 0;
-  }
-  .description__title-wrapper--big {
-    margin-bottom: 4em;
-  }
-  .description__title-wrapper {
-    margin-bottom: 2em;
-  }
-  .description__title {
-    text-align: center;
   }
   .description__paragraphs-wrapper {
     padding: 1em 0 1em 0;
@@ -740,32 +742,6 @@ body {
     width: 100vw;
     box-sizing: border-box;
     padding: 0 10% 0 10%;
-  }
-  .description__mobile-logo-wrapper {
-    position: relative;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .logo__image {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    width: 45%;
-  }
-  .description__title {
-    margin: 0;
-    padding: 0;
-  }
-  .description__title-wrapper--big {
-    margin-bottom: 4em;
-  }
-  .description__title-wrapper {
-    margin-bottom: 2em;
-  }
-  .description__title {
-    text-align: center;
   }
   .description__paragraphs-wrapper {
     position: relative;
@@ -1205,31 +1181,6 @@ body {
   .description__title-wrapper {
     width: 100%;
   }
-  .description__mobile-logo-wrapper {
-    position: relative;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .logo__image {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    width: 45%;
-  }
-  .description__title-wrapper,
-  .description__title {
-    margin: 0;
-    padding: 0;
-  }
-  .description__title-wrapper--big {
-    margin-bottom: 4em;
-  }
-  .description__title-wrapper {
-    margin-bottom: 2em;
-  }
-  .description__title,
   .side__menu-title {
     text-align: center;
   }
