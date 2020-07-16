@@ -219,16 +219,55 @@ body {
 }
 .footer__wrapper {
   display: flex;
+  width: 100%;
+  background-color: black;
   justify-content: center;
   text-align: center;
 }
 .footer__text {
-  padding-top: 1em;
+  padding-top: .5em;
   font-size: 0.7em;
+  color: rgb(255, 255, 255);
+}
+.footer__shortcuts-wrapper{
+  width: 100%;
+  display: none;
+  grid-template-columns: 30% auto 30%;
+  grid-template-rows: 1fr 1fr;
+  background-color: rgba(80, 80, 80, 0.5);
+}
+.footer__shortcuts-list{
+  list-style: none;
+  padding: 0 0 0 5em;
+  line-height: 2em;
+  font-size: .8em;
+  font-weight: bold;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.shortcuts__elements-link{
+  color: inherit;
+  text-decoration: none;
+}
+.shortcuts__logo{
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.shortcuts__logo-img{
+  width: 50%;
+}
+.shortcuts__address-wrapper{
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.shortcuts__address{
+  text-align: left;
 }
 /***********************    FOOTER      ***********************/
-/********** MEDIA QUERIES FOR DEVICE MAX-WIDTH: 480px ****************/
-
 @media (max-width: 480px) {
   .side__menu {
     display: none;
@@ -286,8 +325,8 @@ body {
     top: 0;
     display: flex;
     flex-direction: column;
-    background-color: lightgray;
-    /*** Default color will be diffrent ***/
+    background: url(../assets/bcg.jpeg);
+    border-right: 1px dashed rgb(0, 0, 0);
     width: 75vw;
     height: 100%;
     transition-duration: 0.8s;
@@ -321,17 +360,25 @@ body {
   .hamburger__mobile-logo {
     position: relative;
     display: block;
-    width: 50%;
+    width: 75%;
+    transform: translateX(-10%);
   }
   .navigation__menu-list {
     margin: 0;
     list-style-type: none;
     display: block;
+    color: inherit;
   }
   .navigation__menu-links {
     display: block;
     margin-bottom: 1.5em;
     text-decoration: none;
+    color: inherit;
+  }
+  .navigation__menu-link--active {
+    text-decoration: underline;
+    color: rgb(0,0,0);
+    /* padding: 1em; */
   }
   /*********************** HAMBURGER MENU ***********************/
   /*******************  SCROLL BUTTON *********************/
@@ -612,8 +659,8 @@ body {
     top: 0;
     display: flex;
     flex-direction: column;
-    background-color: lightgray;
-    /*** Default color will be diffrent ***/
+    background: url(../assets/bcg.jpeg);
+    border-right: 1px dashed rgb(0, 0, 0);
     width: 75vw;
     height: 100%;
     transition-duration: 0.8s;
@@ -649,6 +696,7 @@ body {
     position: relative;
     display: block;
     width: 50%;
+    transform: translateX(-10%);
   }
   .navigation__menu-list {
     margin: 0;
@@ -917,6 +965,8 @@ body {
   .navigation__menu-link {
     display: inline;
     padding: 1em;
+    text-decoration: none;
+    color: inherit;
     transition: 0.8s;
   }
   .navigation__menu-link:hover {
@@ -929,8 +979,8 @@ body {
   }
   .navigation__menu-link--active {
     text-decoration: underline;
-    color: rgb(0, 0, 0);
-    cursor: default;
+    color: rgb(0,0,0);
+    padding: 1em;
   }
   .navigation__container {
     position: relative;

@@ -5,7 +5,6 @@ const hamburgerBar = document.querySelector(".hamburger__bar");
 const nav = document.querySelector(".navigation__menu");
 const closeHamburgerBackground = document.querySelector(".background");
 //HAMBURGER MENU
-
 //SMOOTH SCROLL
 const scrollButton = document.querySelector(".scroll__button");
 const headerElement = document.querySelector(
