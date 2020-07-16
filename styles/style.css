@@ -99,6 +99,20 @@ body {
   max-height: 1000px;
   transition: max-height 1s 0.2s ease-in;
 }
+.dropdown__button-icon {
+  width: 1em;
+  transition: 0.5s;
+}
+.dropdown__button-icon--rotate {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+.dropdown__list-hidden,
+.dropdown__ul-elements {
+  max-height: 0;
+  transition: max-height 1s ease-out;
+  overflow: hidden;
+}
 /******************* DROPDOWN BUTTON **************************/
 /*********************** SIDE MENU ****************************/
 .side__menu {
@@ -130,6 +144,26 @@ body {
   text-decoration: underline;
 }
 /*********************** SIDE MENU ****************************/
+  /*************** COMMON BLOCK AND ELEMENTS **************/
+  .service__icon-wrapper {
+    margin-right: 0.8em;
+  }
+  .service__icon {
+    height: 1em;
+  }
+  .div__description-paragraphs-wrapper {
+    width: 90vw;
+    margin: 2em 1em 2em 1em;
+  }
+  .span__bold {
+    font-weight: bold;
+  }
+  .contact__number {
+    display: block;
+    margin: 1em 0 1em 0;
+    text-align: center;
+  }
+  /*************** COMMON BLOCK AND ELEMENTS **************/
 /****** DESCRIPTION ******************************************/
 .description__mobile-logo-wrapper {
   position: relative;
@@ -448,25 +482,6 @@ body {
     list-style: lower-alpha;
   }
   /******************* DESCRIPTION SECTION **********************/
-  /*************** COMMON BLOCK AND ELEMENTS **************/
-  .service__icon-wrapper {
-    margin-right: 0.8em;
-  }
-  .service__icon {
-    height: 1em;
-  }
-  .div__description-paragraphs-wrapper {
-    width: 90vw;
-    margin: 2em 1em 2em 1em;
-  }
-  .span__bold {
-    font-weight: bold;
-  }
-  .contact__number {
-    display: block;
-    margin: 1em 0 1em 0;
-    text-align: center;
-  }
   /******************** CONTACT SECTION  ******************/
   .contact__details-party {
     display: flex;
@@ -532,20 +547,6 @@ body {
     padding: 1em;
     max-height: 300em;
     transition: max-height 0.8s ease-in;
-  }
-  .dropdown__button-icon {
-    width: 1em;
-    transition: 0.5s;
-  }
-  .dropdown__button-icon--rotate {
-    transform: rotate(180deg);
-    transition: 0.5s;
-  }
-  .dropdown__list-hidden,
-  .dropdown__ul-elements {
-    max-height: 0;
-    transition: max-height 1s ease-out;
-    overflow: hidden;
   }
   .contact__details-flex {
     display: flex;
@@ -822,25 +823,6 @@ body {
     list-style: lower-alpha;
   }
   /******************* DESCRIPTION SECTION **********************/
-  /*************** COMMON BLOCK AND ELEMENTS **************/
-  .service__icon-wrapper {
-    margin-right: 0.8em;
-  }
-  .service__icon {
-    height: 1em;
-  }
-  .div__description-paragraphs-wrapper {
-    width: 90vw;
-    margin: 2em 1em 2em 1em;
-  }
-  .span__bold {
-    font-weight: bold;
-  }
-  .contact__number {
-    display: block;
-    margin: 1em 0 1em 0;
-    text-align: center;
-  }
   /******************** CONTACT SECTION  ******************/
   .contact__details-party {
     display: flex;
@@ -906,20 +888,6 @@ body {
     padding: 1em;
     max-height: 300em;
     transition: max-height 0.8s ease-in;
-  }
-  .dropdown__button-icon {
-    width: 1em;
-    transition: 0.5s;
-  }
-  .dropdown__button-icon--rotate {
-    transform: rotate(180deg);
-    transition: 0.5s;
-  }
-  .dropdown__list-hidden,
-  .dropdown__ul-elements {
-    max-height: 0;
-    transition: max-height 1s ease-out;
-    overflow: hidden;
   }
   .contact__details-flex {
     display: flex;
@@ -1249,25 +1217,6 @@ body {
     list-style: lower-alpha;
   }
   /******************* DESCRIPTION SECTION **********************/
-  /*************** COMMON BLOCK AND ELEMENTS **************/
-  .service__icon-wrapper {
-    margin-right: 0.8em;
-  }
-  .service__icon {
-    height: 1em;
-  }
-  .div__description-paragraphs-wrapper {
-    width: 90vw;
-    margin: 2em 1em 2em 1em;
-  }
-  .span__bold {
-    font-weight: bold;
-  }
-  .contact__number {
-    display: block;
-    margin: 1em 0 1em 0;
-    text-align: center;
-  }
   /******************** CONTACT SECTION  ******************/
   .contact__details-party {
     display: flex;
@@ -1344,20 +1293,6 @@ body {
     line-height: 1.8;
     max-height: 300em;
     transition: max-height 0.8s ease-in;
-  }
-  .dropdown__button-icon {
-    width: 1em;
-    transition: 0.5s;
-  }
-  .dropdown__button-icon--rotate {
-    transform: rotate(180deg);
-    transition: 0.5s;
-  }
-  .dropdown__list-hidden,
-  .dropdown__ul-elements {
-    max-height: 0;
-    transition: max-height 1s ease-out;
-    overflow: hidden;
   }
   .contact__details-flex {
     display: flex;
