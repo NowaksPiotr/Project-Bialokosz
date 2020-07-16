@@ -84,6 +84,22 @@ body {
   transition: 0.8s;
 }
 /******************* SCROLL UP BUTTON *************************/
+/******************* DROPDOWN BUTTON **************************/
+.dropdown__button-wrapper {
+  position: absolute;
+  right: 2em;
+  margin: 0 0 0 1.5em;
+}
+.service__list-terms--inner {
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden;
+}
+.service__list-terms--inner-active {
+  max-height: 1000px;
+  transition: max-height 1s 0.2s ease-in;
+}
+/******************* DROPDOWN BUTTON **************************/
 /*********************** SIDE MENU ****************************/
 .side__menu {
   position: fixed;
@@ -432,22 +448,6 @@ body {
     list-style: lower-alpha;
   }
   /******************* DESCRIPTION SECTION **********************/
-  /******************* DROPDOWN BUTTON **************************/
-  .dropdown__button-wrapper {
-    position: absolute;
-    right: 2em;
-    margin: 0 0 0 1.5em;
-  }
-  .service__list-terms--inner {
-    max-height: 0;
-    transition: max-height 0.5s ease-out;
-    overflow: hidden;
-  }
-  .service__list-terms--inner-active {
-    max-height: 1000px;
-    transition: max-height 1s 0.2s ease-in;
-  }
-  /******************* DROPDOWN BUTTON **************************/
   /*************** COMMON BLOCK AND ELEMENTS **************/
   .service__icon-wrapper {
     margin-right: 0.8em;
@@ -822,22 +822,6 @@ body {
     list-style: lower-alpha;
   }
   /******************* DESCRIPTION SECTION **********************/
-  /******************* DROPDOWN BUTTON **************************/
-  .dropdown__button-wrapper {
-    position: absolute;
-    right: 7em;
-    margin: 0 0 0 1.5em;
-  }
-  .service__list-terms--inner {
-    max-height: 0;
-    transition: max-height 0.5s ease-out;
-    overflow: hidden;
-  }
-  .service__list-terms--inner-active {
-    max-height: 1000px;
-    transition: max-height 1s 0.2s ease-in;
-  }
-  /******************* DROPDOWN BUTTON **************************/
   /*************** COMMON BLOCK AND ELEMENTS **************/
   .service__icon-wrapper {
     margin-right: 0.8em;
@@ -1265,22 +1249,6 @@ body {
     list-style: lower-alpha;
   }
   /******************* DESCRIPTION SECTION **********************/
-  /******************* DROPDOWN BUTTON **************************/
-  .dropdown__button-wrapper {
-    position: absolute;
-    right: 2em;
-    margin: 0 0 0 1.5em;
-  }
-  .service__list-terms--inner {
-    max-height: 0;
-    transition: max-height 0.5s ease-out;
-    overflow: hidden;
-  }
-  .service__list-terms--inner-active {
-    max-height: 1000px;
-    transition: max-height 1s 0.2s ease-in;
-  }
-  /******************* DROPDOWN BUTTON **************************/
   /*************** COMMON BLOCK AND ELEMENTS **************/
   .service__icon-wrapper {
     margin-right: 0.8em;
