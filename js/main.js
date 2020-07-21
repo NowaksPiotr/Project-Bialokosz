@@ -79,7 +79,7 @@ function scrolling() {
   } else {
     scrollUP.classList.remove("scroll-up__show");
   }
-  if((footer.offsetTop-scrollPosition) <= 29){
+  if((footer.offsetTop-scrollPosition) <= 530){
     footer.classList.add('onBottom');
   }else{
     footer.classList.remove('onBottom');

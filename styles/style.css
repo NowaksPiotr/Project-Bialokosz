@@ -273,7 +273,7 @@ body {
 }
 .onBottom{
   background-color: rgba(255, 255, 255, 0.8);
-  transition: 2s;
+  transition: 5s;
 }
 .footer__wrapper {
   display: flex;
