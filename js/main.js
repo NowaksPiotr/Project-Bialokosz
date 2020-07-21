@@ -89,7 +89,6 @@ scrollButton.addEventListener("click", () => {
 });
 roomType.forEach(function scrollMe(pageRoom, index) {
   roomType[index].addEventListener("click", () => {
-  console.log(window.scrollY);
     scrollToRoom[index].scrollIntoView({
       behavior: "smooth",
     });
@@ -105,16 +104,16 @@ scrollUP.addEventListener("click", () => {
 });
 //***********************SMOOTH SCROLL UP******************************************************
 //***********************SIDE MENU - ACTIVE TOGGLE ********************************************
-if(siteName === "Noclegi Pałac Białokosz"){
-  roomType.forEach(function(el, index){
-    el.addEventListener('click', ()=>{
-      let selected = document.querySelector('.side__menu-element--active');
-      if(selected){
-        selected.classList.remove('side__menu-element--active');
+if (siteName === "Noclegi Pałac Białokosz") {
+  roomType.forEach(function (el, index) {
+    el.addEventListener("click", () => {
+      let selected = document.querySelector(".side__menu-element--active");
+      if (selected) {
+        selected.classList.remove("side__menu-element--active");
       }
-      el.classList.add('side__menu-element--active');
-    })
-  })
+      el.classList.add("side__menu-element--active");
+    });
+  });
 }
 //***********************SIDE MENU - ACTIVE TOGGLE ********************************************
 //***********************DROPDOWN BUTTON******************************************************
