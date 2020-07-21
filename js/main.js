@@ -33,6 +33,8 @@ const sideMenu = document.querySelector(".side__menu");
 let roomType = document.querySelectorAll(".side__menu-element");
 let scrollToRoom = document.querySelectorAll(".separator");
 
+//FOOTER
+const footer = document.querySelector('.footer');
 //***********************HAMBURGER MENU*******************************************************
 
 hamburger.addEventListener("click", openHamburgerMenu);
@@ -76,6 +78,11 @@ function scrolling() {
     scrollUP.classList.add("scroll-up__show");
   } else {
     scrollUP.classList.remove("scroll-up__show");
+  }
+  if((footer.offsetTop-scrollPosition) <= 29){
+    footer.classList.add('onBottom');
+  }else{
+    footer.classList.remove('onBottom');
   }
 }
 window.addEventListener("scroll", scrolling);

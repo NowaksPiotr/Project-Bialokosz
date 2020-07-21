@@ -271,6 +271,10 @@ body {
   margin-top: 2em;
   font-size: 0.8em;
 }
+.onBottom{
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: 2s;
+}
 .footer__wrapper {
   display: flex;
   width: 100%;
