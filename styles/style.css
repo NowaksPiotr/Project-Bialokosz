@@ -351,7 +351,6 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
 #fb:hover {
   background-color: rgb(59, 89, 152);
   border-radius: 5px;
@@ -649,7 +648,6 @@ body {
     margin: 1em 0 0 0;
   }
   .contact__details-social-media-icon {
-    height: 10%;
     width: 10%;
     margin: 0;
     padding: 0;
