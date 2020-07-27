@@ -36,7 +36,6 @@ let scrollToRoom = document.querySelectorAll(".separator");
 //FOOTER
 const footer = document.querySelector('.footer');
 //***********************HAMBURGER MENU*******************************************************
-
 hamburger.addEventListener("click", openHamburgerMenu);
 closeHamburgerBackground.addEventListener("click", hamburgerClose);
 
