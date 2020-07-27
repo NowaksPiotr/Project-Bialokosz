@@ -811,6 +811,7 @@ body {
     display: block;
     font-size: 2em;
     margin-bottom: 1.5em;
+    color: rgb(31,31,31);
     text-decoration: none;
   }
   /*********************** HAMBURGER MENU ***********************/
